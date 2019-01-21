@@ -1,4 +1,4 @@
-# ![icon](https://upload.wikimedia.org/wikipedia/commons/3/30/Forestry_Le%C5%9Bnictwo_%28Beentree%292.svg)Дендролог
+# ![icon](https://upload.wikimedia.org/wikipedia/commons/3/30/Forestry_Le%C5%9Bnictwo_%28Beentree%292.svg){:height="50px"}Дендролог
 Набор заготовок для [JOSM](https://josm.openstreetmap.de/), облегчающие и унифицирующие тегирование деревьев и кустарников.
 
 В настоящий момент включает следующие заготовки:
@@ -23,7 +23,7 @@
 
 Для удобства во время редактирования можно воспользоваться плагином JOSM [tagging-preset-tester](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/tagging-preset-tester). В нём есть возможность смотреть экранные формы и подгружать изменения через кнопку `Обновить`, а не перезагрузкой JOSM.
 
-### Благодарности =)
+## Благодарности =)
 - Александр Панкратов — за идею и неугомонность
 - Alexander Istomin — за болванку "ридми"
 - Anton Belichkov — за "когда будет заготовка"
