@@ -1,4 +1,4 @@
-# ![icon](https://upload.wikimedia.org/wikipedia/commons/3/30/Forestry_Le%C5%9Bnictwo_%28Beentree%292.svg){:height="50px"}Дендролог
+# ![icon](https://upload.wikimedia.org/wikipedia/commons/3/30/Forestry_Le%C5%9Bnictwo_%28Beentree%292.svg =x50)Дендролог
 Набор заготовок для [JOSM](https://josm.openstreetmap.de/), облегчающие и унифицирующие тегирование деревьев и кустарников.
 
 В настоящий момент включает следующие заготовки:
