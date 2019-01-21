@@ -1,11 +1,11 @@
-# (https://upload.wikimedia.org/wikipedia/commons/3/30/Forestry_Le%C5%9Bnictwo_%28Beentree%292.svg)Дендролог
+# ![icon](https://upload.wikimedia.org/wikipedia/commons/3/30/Forestry_Le%C5%9Bnictwo_%28Beentree%292.svg)Дендролог
 Набор заготовок для [JOSM](https://josm.openstreetmap.de/), облегчающие и унифицирующие тегирование деревьев и кустарников.
 
 В настоящий момент включает следующие заготовки:
 * RUS:Дендролог — деревья произрастающие в России
 
 ### Персоналии
-- [Артём «Зелёный Кошак» Крюковский](https://github.com/ZKoshak ZKoshak) — начальная разработка
+- [Артём «Зелёный Кошак» Крюковский (ZKoshak)](https://github.com/ZKoshak) — начальная разработка
 - [контрибутеры](https://github.com/ZKoshak/dendrolog-josm-preset/graphs/contributors)
 
 ## Установка
