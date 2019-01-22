@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190122.4"
+  version="0.0ru20190122.5"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -6021,6 +6021,98 @@
 <!--         /Род: Рябина -->
 <!--       /Семейство: Розовые -->
 <!--     /Порядок: 	Розоцветные -->
+
+<!--     Порядок: 	Мальвоцветные -->
+<!--       Семейство: Мальвовые -->
+<!--         Род: Липа -->
+<!--
+
+        <item name="Липа (род)" preset_name_label="true">
+          <key key="genus" value="Tilia" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <label icon="" icon_size="200" text="
+  " />
+          <space />
+  <label text="" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+          <link href="https://ru.wikipedia.org/wiki/Липа" />
+        </item>
+
+        <group name="Липы (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+-->
+
+          <item name="Липа сердцевидная (вар. мелколистная)" preset_name_label="true">
+            <key key="genus" value="Tilia" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/VandansLinde1.JPG/200px-VandansLinde1.JPG" icon_size="200" text="
+  Ли́па сердцеви́дная, или Липа мелколи́стная (лат. Tília cordáta)" />
+            <space />
+  <label text="Ареал липы сердцевидной простирается от Южной Британии и Центральной Фенноскандии до европейской части России, Кавказа, Болгарии, Италии" />
+  <label text="и Испании. Самые северные пределы естественного распространения липы сердцевидной: в Норвегии — на 66° с.ш., в Финляндии и Архангельской" />
+  <label text="области — недалеко от 64° с.ш., в Швеции и Республике Карелия — за 63° с.ш., в Республике Коми — около 62° с.ш., в Ханты-Мансийском автономном" />
+  <label text="округе — Югре — в окрестностях 61° с.ш." />
+            <space />
+  <label text="В России занимает большие площади на Урале и прилегающей к нему территории европейской части." />
+            <space />
+  <label text="Листопадное дерево 20—38 м высотой с шатровидной кроной." />
+            <space />
+  <label text="Кора тёмная, на старых деревьях бороздчатая." />
+            <space />
+  <label text="Листья очерёдные, сердцевидные, длинночерешковые, зубчатые, с оттянутой заострённой верхушкой, сверху зелёные, снизу сизоватые." />
+            <space />
+  <label text="Цветки правильные, обоеполые, с двойным пятираздельным околоцветником, до 1—1,5 см в диаметре, желтовато-белые, пахучие, собраны в повислые" />
+  <label text="щитковидные соцветия по 3—11 штук, при соцветиях имеется продолговатый желтовато-зелёный прилистник. Тычинок в цветке много. Цветёт с начала" />
+  <label text="июля 10—15 дней." />
+            <space />
+  <label text="Пыльцевые зёрна трёхбороздные, шаровидно-сплющенной формы. Длина полярной оси 25,5—28,9 мкм, экваториальный диаметр 32,3—35,8 мкм. В очертании" />
+  <label text="с полюса почти округлые, с экватора — эллиптические. Борозды щелевидные, короткие, видны только под иммерсионным объективом. Оры продольно" />
+  <label text="вытянутые, с неровными краями, глубоко погруженные, с наибольшим диаметром 10,5—11 мкм; оровая мембрана гладкая или мелкозернистая. Ширина" />
+  <label text="мезопориума 23,5—28,1 мкм. Толщина экзины в центре мезопориума 2,2 мкм, около ор 8 мкм; верхний слой экзины, слегка выклиниваясь, прикрывает" />
+  <label text="ору. Стерженьковый слой имеет толщину 0,8—1 мкм, стерженьки прямые или узловатые, с округлыми или сплющенными головками. Ячейки угловатые" />
+  <label text="или овальные, образующиеся в результате слияния стенок стерженьков или их головок; наибольший диаметр ячеек 1,2 мкм, наименьший — 0,5 мкм." />
+  <label text="Цвет пыльцы светло-жёлто-зелёный." />
+            <space />
+  <label text="Плод — шаровидный, опушённый, тонкостенный, одно- или двусемянный орешек. Плоды созревают в августе — сентябре." />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/b/b1/Tilia_cordata_range.svg" icon_size="600" text="" />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Липа_сердцевидная" />
+          </item>
+
+<!--
+
+          <item name="Липа " preset_name_label="true">
+            <key key="genus" value="Tilia" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="" icon_size="200" text="
+  " />
+            <space />
+  <label text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Липа_" />
+          </item>
+
+        </group>
+
+-->
+
+<!--         /Род: Липа -->
+<!--       /Семейство: Мальвовые -->
+<!--     /Порядок: 	Мальвоцветные -->
 
       </group>
       <group name="Вечнозелёные" icon="https://upload.wikimedia.org/wikipedia/commons/9/96/Tree_icon.jpg">
