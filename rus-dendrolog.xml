@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190122.3"
+  version="0.0ru20190122.4"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -5927,6 +5927,100 @@
 <!--         /Род: Клён -->
 <!--       /Семейство: Сапиндовые -->
 <!--     /Порядок: Сапиндоцветные -->
+
+<!--     Порядок: 	Розоцветные -->
+<!--       Семейство: Розовые -->
+<!--         Род: Рябина -->
+<!--
+
+        <item name="Рябина (род)" preset_name_label="true">
+          <key key="genus" value="Sorbus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <label icon="" icon_size="200" text="
+  " />
+          <space />
+  <label text="" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+          <link href="https://ru.wikipedia.org/wiki/Рябина" />
+        </item>
+
+        <group name="Рябины (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+-->
+
+          <item name="Рябина обыкновенная" preset_name_label="true">
+            <key key="genus" value="Sorbus" />
+            <key key="species" value="aucuparia" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Rowan_tree_20081002b.jpg/300px-Rowan_tree_20081002b.jpg" icon_size="300" text="
+  Ряби́на обыкнове́нная (лат. Sórbus aucupária)" />
+            <space />
+  <label text="Ареал — почти вся Европа, Передняя Азия, Кавказ; доходит до Крайнего Севера, а в горах поднимается до самой границы растительности, где" />
+  <label text="становится уже кустарником." />
+            <space />
+  <label text="Интродуцирована повсюду в мире в зоне умеренного климата." />
+            <space />
+  <label text="В России распространена в лесной и лесостепной зоне европейской части, на Северном Кавказе, на Урале." />
+            <space />
+  <label text="Растёт отдельными экземплярами, не образуя сплошных зарослей, в подлеске или втором ярусе хвойных, смешанных, изредка лиственных лесов," />
+  <label text="на лесных полянах и опушках, между кустарниками." />
+            <space />
+  <label text="Дерево, реже кустарник. Достигает 12 м высоты (обычно 5—10 м). Крона округлая, ажурная." />
+            <space />
+  <label text="Молодые побеги серовато-красные, опушены. Кора взрослых деревьев гладкая светло-серо-коричневая или жёлто-серая, блестящая." />
+            <space />
+  <label text="Почки войлочно-пушистые." />
+            <space />
+  <label text="Листья до 20 см длиной, очерёдные, непарноперистосложные, состоят из 7—15 почти сидячих ланцетных или вытянутых, заострённых, зубчатых" />
+  <label text="по краю листочков, цельнокрайних в нижней части и пильчатых в верхней, сверху зелёных, обычно матовых, снизу заметно более бледных, опушённых." />
+  <label text="Осенью листья окрашиваются в золотистые и красные тона." />
+            <space />
+  <label text="Цветки пятичленные многочисленные, собранные в густые щитковидные соцветия диаметром до 10 см; соцветия располагаются на концах укороченных" />
+  <label text="побегов. Цветоложе урноподобной формы — чашечка из пяти широкотреугольных реснитчатых чашелистиков. Венчик белый (0,8—1,5 см в диаметре)," />
+  <label text="лепестков пять, тычинок много, пестик один, столбиков три, завязь нижняя. При цветении источается неприятный запах (причиной тому газ" />
+  <label text="триметиламин). Цветёт в мае — июне." />
+            <space />
+  <label text="Плод — шаровидное сочное оранжево-красное яблоко (около 1 см в поперечнике) с мелкими округлыми по краю семенами. В Подмосковье плоды" />
+  <label text="созревают в конце августа — сентябре и висят зрелыми до зимы." />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/7/71/Sorbus_aucuparia_range.svg" icon_size="700" text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Рябина_обыкновенная" />
+          </item>
+
+<!--
+
+          <item name="Рябина " preset_name_label="true">
+            <key key="genus" value="Sorbus" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="" icon_size="200" text="
+  " />
+            <space />
+  <label text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Рябина_" />
+          </item>
+
+        </group>
+
+-->
+
+<!--         /Род: Рябина -->
+<!--       /Семейство: Розовые -->
+<!--     /Порядок: 	Розоцветные -->
 
       </group>
       <group name="Вечнозелёные" icon="https://upload.wikimedia.org/wikipedia/commons/9/96/Tree_icon.jpg">
