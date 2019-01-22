@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190122.5"
+  version="0.0ru20190122.6"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -7073,6 +7073,83 @@
 <!--         /Род:  -->
 <!--       /Семейство:  -->
 <!--     /Порядок:  -->
+
+<!--     Порядок: Розоцветные -->
+<!--       Семейство: Розовые -->
+<!--         Род: Слива -->
+
+<!--
+        <item name="Слива (род)" preset_name_label="true">
+          <key key="genus" value="Prunus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <label icon="" icon_size="200" text="
+  " />
+          <space />
+  <label text="" />
+          <item_separator />
+          <reference ref="orchard_optional_tagging" />
+          <link href="https://ru.wikipedia.org/wiki/Слива" />
+        </item>
+
+        <group name="Слива (виды)" icon="presets/landuse/orchard.svg">
+
+-->
+
+        <item name="Вишня обыкновенная (вар. кислая)" preset_name_label="true">
+          <key key="genus" value="Prunus" />
+          <key key="species" value="cerasus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Blooming_sour_cherry_tree.jpg/300px-Blooming_sour_cherry_tree.jpg" icon_size="300" text="
+Ви́шня ки́слая, или Вишня обыкнове́нная (лат. Prúnus cérasus)" />
+          <space />
+  <label text="Встречается только в культуре; в дикой природе не встречается. Некоторые биологи считают вишню обыкновенную естественным гибридом вишни" />
+  <label text="степной и черешни, который возник и многократно повторялся в местах совместного произрастания материнских видов. Предполагают, что естественное" />
+  <label text="скрещивание черешни и вишни степной произошло в Македонии, но, возможно, на Северном Кавказе и в Приднепровье." />
+          <space />
+  <label text="Вишня кислая — дерево или кустарник, достигает до 10 м в высоту." />
+          <space />
+  <label text="Листья черешковые, широкоэллиптические, заострённые, тёмно-зелёные сверху, снизу светлее, достигают в длину 8 см." />
+          <space />
+  <label text="Цветки белого цвета, собраны в зонтиках по 2—3 цветка. Чашелистиков и лепестков по пять, тычинок 15—20, пестик один. Цветёт в конце марта —" />
+  <label text="начале апреля." />
+          <space />
+  <label text="Плод — кисло-сладкая, шарообразная костянка, до 1 см в диаметре. Плодоносит со второй половины мая." />
+          <item_separator />
+          <reference ref="orchard_optional_tagging" />
+          <link href="https://ru.wikipedia.org/wiki/Вишня_обыкновенная" />
+        </item>
+
+<!--
+
+          <item name="Слива " preset_name_label="true">
+            <key key="genus" value="Prunus" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="" icon_size="200" text="
+  " />
+            <space />
+  <label text="" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Слива_" />
+          </item>
+
+        </group>
+-->
+
+<!--         /Род: Слива -->
+<!--       /Семейство: Розовые -->
+<!--     /Порядок: Розоцветные -->
+
 <!--   /Класс:  -->
 
 <!--/Листопадные -->
