@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190122.1"
+  version="0.0ru20190122.2"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -5749,6 +5749,102 @@
 <!--         /Род: Ива -->
 <!--       /Семейство: Ивовые -->
 <!--     /Порядок: Мальпигиецветные -->
+
+<!--     Порядок: Сапиндоцветные -->
+<!--       Семейство: Сапиндовые -->
+<!--         Род: Клён -->
+<!--
+
+        <item name="Клён (род)" preset_name_label="true">
+          <key key="genus" value="Acer" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <label icon="" icon_size="200" text="
+  " />
+          <space />
+  <label text="" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+          <link href="https://ru.wikipedia.org/wiki/Клён" />
+        </item>
+
+        <group name="Клёны (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+-->
+
+          <item name="Клён полевой (вар.: равнинный; Неклён, Паклён)" preset_name_label="true">
+            <key key="genus" value="Acer" />
+            <key key="species" value="campestre" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Acer_campestre_006.jpg/200px-Acer_campestre_006.jpg" icon_size="200" text="
+  Клён полево́й, или Клён равни́нный, или Неклён, или Паклён (лат. Ácer campéstre)" />
+            <space />
+  <label text="Распространён в Европе, на Кавказе, в Малой Азии и Иране. В России встречается в чернозёмной полосе европейской части, севернее — только" />
+  <label text="в культуре." />
+            <space />
+  <label text="Северная граница ареала проходит в Англии — южнее Шотландии, далее через южную оконечность Скандинавского полуострова в Швеции к устью Эльбы," />
+  <label text="затем резко поворачивает на юго-запад, проходит через Волынскую область, Житомир, севернее Киева поднимается через Орёл вдоль реки Оки к Туле," />
+  <label text="южнее Рязани проходит к Тамбову (в более северных областях — только в культуре); не доходя Пензы и Саратова, восточная граница идёт к Дону" />
+  <label text="и далее по Крыму и Кавказу." />
+            <space />
+  <label text="Листопадное дерево высотой до 15 м (на Кавказе до 25 м) с густой шаровидной кроной (редко — кустарник)." />
+            <space />
+  <label text="Ствол прямой или слегка изогнутый, до 60 см в диаметре, покрытый тонкой, буровато-серой корой с продольными трещинками. Молодые побеги" />
+  <label text="желтовато-бурые, тонкие, иногда крылатые от пробковых наростов." />
+            <space />
+  <label text="Почки яйцевидные, до 5 мм длины, с 6—9 оливково-бурыми чешуями, белореснитчатые по краям." />
+            <space />
+  <label text="Листья супротивные, обычно пятилопастные, редко трёхпальчатолопастные, плотные, сидят на черешке длиной 5—13 см. Лопасти тупые, цельнокрайние" />
+  <label text="или с немногими притупленными зубцами. Размеры листовой пластины: 4—17 см в длину и 4,5—10 см в ширину. Верхняя сторона листа тёмно-зелёная" />
+  <label text="или светло-зелёная, слегка блестящая, а нижняя более светлая, светло-зелёная, мелкоопушённая или только с бородками в углах жилок. Осенью (в" />
+  <label text="октябре) листья приобретают золотисто-жёлтую окраску." />
+            <space />
+  <label text="Соцветия — конечные 15—20-цветковые прямостоячие щитковидные метёлки около 3,5 см в диаметре, с оттопыренно-волосистыми осью и цветоножками." />
+            <space />
+  <label text="Цветки жёлто-зелёные, с массивным нектарным диском, распускаются почти одновременно с развёртыванием листьев, ложнообоеполые — пестичные" />
+  <label text="и тычиночные на одном растении. Цветоножки коротко-мохнатые. Чашелистики продолговато-эллиптические, снаружи и по краям волосистые. Лепестки" />
+  <label text="более узкие, лопатчатые, по краю волосистые. Тычинок 8, в тычиночных цветках они длиннее, в пестичных равны околоцветнику, нити тычинок голые." />
+  <label text="Завязь голая или пушистая. Цветёт в течение 10—15 дней в апреле-мае после распускания листьев." />
+            <space />
+  <label text="Плод — крылатка 2—3,5 см длины и около 1 см ширины, с горизонтально распростёртыми крыльями, иногда серповидно изогнутая. Плодоносит" />
+  <label text="в сентябре-октябре." />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/b/bb/Acer_campestre_range.svg" icon_size="700" text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Клён_" />
+          </item>
+
+<!--
+
+          <item name="Клён " preset_name_label="true">
+            <key key="genus" value="Acer" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="" icon_size="200" text="
+  " />
+            <space />
+  <label text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Клён_" />
+          </item>
+
+        </group>
+
+-->
+
+<!--         /Род: Клён -->
+<!--       /Семейство: Сапиндовые -->
+<!--     /Порядок: Сапиндоцветные -->
 
       </group>
       <group name="Вечнозелёные" icon="https://upload.wikimedia.org/wikipedia/commons/9/96/Tree_icon.jpg">
