@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190122.2"
+  version="0.0ru20190122.3"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -5747,6 +5747,88 @@
 -->
 
 <!--         /Род: Ива -->
+<!--         Род: Тополь -->
+<!--
+
+        <item name="Тополь (род)" preset_name_label="true">
+          <key key="genus" value="Populus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <label icon="" icon_size="200" text="
+  " />
+          <space />
+  <label text="" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+          <link href="https://ru.wikipedia.org/wiki/Тополь" />
+        </item>
+
+        <group name="Тополи (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+        -->
+
+          <item name="Осина обыкновенная (вар. Тополь дрожащий)" preset_name_label="true">
+            <key key="genus" value="Populus" />
+            <key key="species" value="tremula" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Ospeholt_i_Hurdal.JPG/200px-Ospeholt_i_Hurdal.JPG" icon_size="200" text="
+  Оси́на обыкнове́нная, или То́поль дрожа́щий (лат. Pópulus trémula)" />
+            <space />
+  <label text="Осина широко распространена в районах с умеренным и холодным климатом Европы и Азии." />
+            <space />
+  <label text="Встречается на границе леса и тундры, растёт в лесной и лесостепной зонах. Её можно встретить по берегам водоёмов, в лесах, по опушкам," />
+  <label text="изредка на сухих песках и вырубках, по оврагам, болотам и в горах; поднимается до верхней границы леса." />
+            <space />
+  <label text="Осина выделяется колонновидным стволом, достигающим 35 м высоты и 1 м в диаметре. Корневая система располагается глубоко под землёй. Обильно" />
+  <label text="образует корневые отпрыски. Кора молодых деревьев гладкая, светло-зелёная или зеленовато-серая, ближе к комлю с возрастом растрескивается" />
+  <label text="и темнеет." />
+            <space />
+  <label text="Древесина белая с зеленоватым оттенком." />
+            <space />
+  <label text="Листорасположение очерёдное. Листья округлые или ромбические, длиной 3—7 см, острые или тупые на вершине, с округлым основанием, края" />
+  <label text="городчатые, жилкование перистое. У порослевых побегов листья могут иметь гораздо большие размеры (до 15 см) и почти сердцевидную форму." />
+  <label text="Черешки листьев сплюснуты с боков в верхней части, длинные, поэтому листья легко колеблются при движении воздуха. Осенью листья окрашиваются" />
+  <label text="в различные тона — от золотистых до красных." />
+            <space />
+  <label text="Растения раздельнополые. Цветки мелкие, невзрачные, собраны в свисающие серёжки. Мужские серёжки красноватые, длиной до 15 см, женские серёжки" />
+  <label text="зеленоватые и тоньше. Цветёт осина до распускания листьев." />
+            <space />
+  <label text="Плод — очень мелкая коробочка; семена снабжены пучком волосков — пуховкой." />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/1/10/Populus_tremula_range.svg" icon_size="700" text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Осина" />
+          </item>
+
+<!--
+
+          <item name="Тополь " preset_name_label="true">
+            <key key="genus" value="Populus" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="" icon_size="200" text="
+  " />
+            <space />
+  <label text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Тополь_" />
+          </item>
+
+        </group>
+
+-->
+
+<!--         /Род: Тополь -->
 <!--       /Семейство: Ивовые -->
 <!--     /Порядок: Мальпигиецветные -->
 
