@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190123.4"
+  version="0.0ru20190123.5"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -6183,6 +6183,89 @@
 -->
 
 <!--         /Род: Рябина -->
+
+<!--         Род: Слива -->
+<!--
+
+        <item name="Слива (род)" preset_name_label="true">
+          <key key="genus" value="Prunus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <label icon="" icon_size="200" text="
+  " />
+          <space />
+  <label text="" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+          <link href="https://ru.wikipedia.org/wiki/Слива" />
+        </item>
+
+        <group name="Сливы (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+-->
+
+          <item name="Черёмуха обыкновенная (вар.: кистевая, птичья)" preset_name_label="true">
+            <key key="genus" value="Prunus" />
+            <key key="species" value="padus" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Baum_M%C3%A4lardalen.jpg/200px-Baum_M%C3%A4lardalen.jpg" icon_size="200" text="
+  Черёмуха обыкнове́нная (лат. Prúnus pádus, «слива с реки По»), или Черёмуха кистева́я, или Черёмуха пти́чья" />
+            <space />
+  <label text="Естественный ареал — Северная Африка (Марокко), Южная, Центральная, Западная, Северная и Восточная Европа, Малая, Центральная и Восточная" />
+  <label text="Азия (в том числе многие провинции Китая), Закавказье." />
+            <space />
+  <label text="В России обыкновенна в Европейской части, Западной и Восточной Сибири, на Дальнем Востоке." />
+            <space />
+  <label text="Занесена и натурализовалась повсюду в мире в зоне умеренного климата." />
+            <space />
+  <label text="Деревце, дерево или крупный кустарник высотой 0,6—10 м, крона удлинённая, густая. Кора матовая, чёрно-серая, с беловатыми чечевичками. Молодые" />
+  <label text="ветви оливковые или вишнёво-красные." />
+            <space />
+  <label text="Листья простые, очерёдные, яйцевидно-ланцетные или продолговато-эллиптические, длиной 3—10 (реже 15) см, голые, тонкие, на коротких черешках," />
+  <label text="заострённые, по краю остропильчатые; прилистники шиловидные, рано опадающие; черешки длиной 1—1,5 см, наверху у основания листовой пластинки" />
+  <label text="две желёзки." />
+            <space />
+  <label text="Цветки белые (реже розоватые), собраны в длинные густые поникающие кисти длиной 8—12 см, с сильным запахом, на цветоножках. Чашелистиков и" />
+  <label text="лепестков по 5, тычинок 20, пыльники жёлтые, пестик один. Цветёт в мае — июне." />
+            <space />
+  <label text="Плод — шаровидная чёрная костянка диаметром 8—10 мм, сладкая, сильно вяжущая. Косточка округло-яйцевидная. Плод вначале зелёный, сердцевидный," />
+  <label text="плотный, по мере созревания кожица краснеет, далее чернеет. Мякоть зрелых плодов зелёная, на воздухе приобретает темно-фиолетовый цвет. Плоды" />
+  <label text="созревают в июле — августе." />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/1/1c/Prunus_padus_range.svg" icon_size="700" text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Черёмуха_обыкновенная" />
+          </item>
+
+<!--
+          <item name="Слива " preset_name_label="true">
+            <key key="genus" value="Prunus" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="" icon_size="200" text="
+  " />
+            <space />
+  <label text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Слива_" />
+          </item>
+
+        </group>
+
+-->
+
+<!--         /Род: Слива -->
+
 <!--       /Семейство: Розовые -->
 <!--     /Порядок: 	Розоцветные -->
 
