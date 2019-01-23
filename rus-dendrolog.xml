@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190123.2"
+  version="0.0ru20190123.3"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -7207,6 +7207,35 @@
           <item_separator />
           <reference ref="orchard_optional_tagging" />
           <link href="https://ru.wikipedia.org/wiki/Вишня_обыкновенная" />
+        </item>
+
+        <item name="Слива домашняя" preset_name_label="true">
+          <key key="genus" value="Prunus" />
+          <key key="species" value="domestica" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/20130416Prunus_cerasifera_Saarbruecken6.jpg/300px-20130416Prunus_cerasifera_Saarbruecken6.jpg" icon_size="300" text="
+Сли́ва дома́шняя (лат. Prúnus doméstica)" />
+          <space />
+<label text="Географическим центром происхождения можно считать территорию, простирающуюся от Восточного Кавказа до восточного побережья Адриатического" />
+<label text="моря, включая Балканский полуостров и Малую Азию." />
+          <space />
+<label text="Дерево высотой до 15 м с широко- или узкояйцевидной кроной. Корневая система — стержневая, основная масса корней расположена на глубине 20—40 см." />
+          <space />
+<label text="Листья очерёдные, простые, короткочерешковые, эллиптические или обратнояйцевидные, с городчатым или пильчатым краем, снизу опушённые; длина" />
+<label text="4—10 см, ширина 2—5 см." />
+          <space />
+<label text="Цветковые почки простые, дают 1—3 цветка. Цветки белые, диаметром 1,5—2 см." />
+          <space />
+<label text="Плод — однокостянка, фиолетовая, жёлтая, бледно-зелёная, красная, чёрно-синяя, с сизым восковым налётом. Косточка сплюснутая, заострённая" />
+<label text="с обоих концов." />
+          <space />
+<label text="Кариотип: 2n=48." />
+          <item_separator />
+          <reference ref="orchard_optional_tagging" />
+          <link href="https://ru.wikipedia.org/wiki/Слива_домашняя" />
         </item>
 
 <!--
