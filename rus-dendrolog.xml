@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190123.5"
+  version="0.0ru20190123.6"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -6265,6 +6265,82 @@
 -->
 
 <!--         /Род: Слива -->
+
+<!--         Род: Яблоня -->
+<!--
+
+        <item name="Яблоня (род)" preset_name_label="true">
+          <key key="genus" value="Malus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <label icon="" icon_size="200" text="
+  " />
+          <space />
+  <label text="" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+          <link href="https://ru.wikipedia.org/wiki/Яблоня" />
+        </item>
+
+        <group name="Яблони (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+-->
+
+          <item name="Яблоня лесная (вар. дикая)" preset_name_label="true">
+            <key key="genus" value="Malus" />
+            <key key="species" value="sylvestris" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/%D0%AF%D0%B1%D0%BB%D0%BE%D0%BD%D1%8F_Lob.jpg/200px-%D0%AF%D0%B1%D0%BB%D0%BE%D0%BD%D1%8F_Lob.jpg" icon_size="200" text="
+  Я́блоня лесна́я, или я́блоня ди́кая (лат. Málus sylvéstris)" />
+            <space />
+  <label text="Природный ареал яблони лесной — от Центральной Европы до Передней Азии, причём южная и восточная границы ареала достоверно не определены." />
+  <label text="В Альпах яблоня лесная встречается вплоть до высоты 1100 м над уровнем моря. Она предпочитает заливные луга и пограничные с лесом сырые местности." />
+            <space />
+  <label text="Яблоня лесная растёт рассеянно в пойменных лесах, в живых изгородях и в кустарнике, на свежей богатой питательными веществами глинистой" />
+  <label text="и каменистой почве." />
+            <space />
+  <label text="Преимущественно высокие кустарники от 3 до 5 метров высотой, хотя встречаются и деревья высотой до 10 м." />
+            <space />
+  <label text="Крона плотная. Кора бурая." />
+            <space />
+  <label text="Слегка покрытые волосками, либо гладкие листья имеют яйцевидную форму, зазубренны, длиной от 4 до 8 см." />
+            <space />
+  <label text="В апреле—мае появляются розовато-белые цветки." />
+            <space />
+  <label text="Шарообразные жёлто-зелёные с пятном красного цвета плоды горько-кислого и деревянистого вкуса имеют диаметр от 2 до 4 см. Семена содержат" />
+  <label text="слабоядовитый амигдалин." />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Яблоня_лесная" />
+          </item>
+
+<!--
+          <item name="Яблоня " preset_name_label="true">
+            <key key="genus" value="Malus" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="" icon_size="200" text="
+  " />
+            <space />
+  <label text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Яблоня_" />
+          </item>
+
+        </group>
+
+-->
+
+<!--         /Род: Яблоня -->
 
 <!--       /Семейство: Розовые -->
 <!--     /Порядок: 	Розоцветные -->
