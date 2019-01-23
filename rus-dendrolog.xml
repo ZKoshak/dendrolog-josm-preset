@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190123.7"
+  version="0.0ru20190123.8"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -6005,6 +6005,93 @@
 -->
 
 <!--         /Род: Клён -->
+
+<!--         Род:Конский каштан  -->
+<!--
+
+        <item name="Конский каштан (род)" preset_name_label="true">
+          <key key="genus" value="Aesculus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <label icon="" icon_size="200" text="
+  " />
+          <space />
+  <label text="" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+          <link href="https://ru.wikipedia.org/wiki/" />
+        </item>
+
+        <group name="Конский каштан (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+-->
+
+          <item name="Конский каштан обыкновенный" preset_name_label="true">
+            <key key="genus" value="Aesculus" />
+            <key key="species" value="hippocastanum" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Horse-chestnut_800.jpg/200px-Horse-chestnut_800.jpg" icon_size="200" text="
+  Ко́нский кашта́н обыкнове́нный (лат.  Aésculus hippocástanum" />
+            <space />
+  <label text="Конский каштан обыкновенный произрастает на небольшой территории в горах на Балканах (на севере Греции, Албании, Республики Македонии, Сербии" />
+  <label text="и Болгарии) в лиственных лесах вместе с ольхой, ясенем, клёном, грабом, липой, буком и другими древесными породами, поднимаясь в горы до" />
+  <label text="высоты 1 000—1 200 м над уровнем моря. Встречается в горных районах Ирана и в предгорьях Гималаев. Широко культивируется в зоне умеренного" />
+  <label text="климата, распространён в посадках во многих районах Европейской части России." />
+            <space />
+  <label text="Конский каштан обыкновенный — изящное дерево высотой до 36 м с низко опущенной раскидистой широкоовальной куполообразной кроной. На старых" />
+  <label text="деревьях наружные ветви часто повисают." />
+            <space />
+  <label text="Ствол правильной цилиндрической формы с тёмно-коричневой пластинчатой корой." />
+            <space />
+  <label text="Корневая система мощная, со стержневым главным корнем и сильно развитыми боковыми корнями, благодаря чему это дерево достаточно ветроустойчиво." />
+  <label text="В корневых волосках есть бактерии, усваивающие азот воздуха, поэтому деревья успешно растут на сравнительно бедных азотом почвах. Молодые" />
+  <label text="побеги и сеянцы толстые. Почки крупные, клейкие, красно-бурые." />
+            <space />
+  <label text="Листья супротивные крупные, до 60 см, пальчато-сложные с 5—7 листочками; каждый листочек 13—30 см в длину, 3—10 в ширину, обратнояйцевидный," />
+  <label text="к основанию клиновидно-суженный. Средний листочек крупнее боковых, черешок очень длинный, 15—20 см." />
+            <space />
+  <label text="Цветки в конечных прямостоячих конусовидных метёлках размером 10—30 см, белые, как правило, с небольшими жёлтыми пятнами или крапинками." />
+  <label text="В каждой метёлке от 20 до 50 цветков. Цветёт в мае после распускания листьев. Цветки обладают интересным свойством: жёлтые пятнышки на лепестках" />
+  <label text="после прекращения выделения нектара меняют цвет на красный." />
+            <space />
+  <label text="Обычно только от 1 до 5 плодов появляются на каждой метёлке. Плоды — коробочки зелёного цвета, с многочисленными шипами, содержат одно (редко" />
+  <label text="два или три) ореховидных семени (часто в обиходной речи называемые конскими каштанами или просто каштанами). Каждый «каштанчик» 2—4 см" />
+  <label text="в поперечнике, блестящий, орехово-коричневый по цвету, в основании с беловатым рубцом. Плоды созревают в августе—сентябре." />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/7/7d/Aesculus_hippocastanum_range.svg" icon_size="500" text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Конский_каштан_обыкновенный" />
+          </item>
+
+<!--
+          <item name="Конский каштан " preset_name_label="true">
+            <key key="genus" value="Aesculus" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="" icon_size="200" text="
+  " />
+            <space />
+  <label text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Конский_каштан_" />
+          </item>
+
+        </group>
+
+-->
+
+<!--         /Род: Конский каштан -->
+
 <!--       /Семейство: Сапиндовые -->
 <!--     /Порядок: Сапиндоцветные -->
 
