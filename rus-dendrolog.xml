@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190123.9"
+  version="0.0ru20190123.10"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -275,7 +275,7 @@
           <link href="https://ru.wikipedia.org/wiki/Корейский_кедр" />
         </item>
 
-        <item name="Сосна стланиковая (вар.: карликовая, плачущая, Кедровый стланик)" type="node">
+        <item name="Сосна стланиковая (вар.: карликовая, плачущая, Кедровый стланик)" preset_name_label="true">
           <key key="genus" value="Pinus" />
           <key key="species" value="pumila" />
           <key key="leaf_type" value="needleleaved" />
@@ -327,7 +327,7 @@
           <link href="https://ru.wikipedia.org/wiki/Сосна_стланиковая" />
         </item>
 
-        <item name="Сосна сибирская кедровая (вар.: Сибирский кедр)" type="node">
+        <item name="Сосна сибирская кедровая (вар.: Сибирский кедр)" preset_name_label="true">
           <key key="genus" value="Pinus" />
           <key key="species" value="sibirica" />
           <key key="leaf_type" value="needleleaved" />
