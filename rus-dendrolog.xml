@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190123.6"
+  version="0.0ru20190123.7"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -6436,6 +6436,92 @@
 <!--         /Род: Липа -->
 <!--       /Семейство: Мальвовые -->
 <!--     /Порядок: 	Мальвоцветные -->
+
+<!--     Порядок: Ясноткоцветные -->
+<!--       Семейство: Маслиновые -->
+<!--         Род: Ясень -->
+<!--
+
+        <item name="Ясень (род)" preset_name_label="true">
+          <key key="genus" value="Fraxinus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <label icon="" icon_size="200" text="
+  " />
+          <space />
+  <label text="" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+          <link href="https://ru.wikipedia.org/wiki/Ясень" />
+        </item>
+
+        <group name="Ясень (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+-->
+
+          <item name="Ясень обыкновенный (вар. высокий)" preset_name_label="true">
+            <key key="genus" value="Fraxinus" />
+            <key key="species" value="excelsior" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg/200px-Ash_Tree_-_geograph.org.uk_-_590710.jpg" icon_size="200" text="
+  Я́сень обыкнове́нный, или Ясень высо́кий (лат. Fráxinus excélsior)" />
+            <space />
+  <label text="Родина ясеня обыкновенного — Европа и Закавказье, откуда простирается в Иран." />
+            <space />
+  <label text="В России он обычен в Европейской части и на Северном Кавказе в широколиственных и смешанных лесах, чаще на опушках или светлых полянах;" />
+  <label text="чистых насаждений почти не образует." />
+            <space />
+  <label text="Самое северное природное местообитание ясеня обыкновенного и в целом — деревьев рода Fraxinus в мире находится в Норвегии, примерно на широте" />
+  <label text="Полярного круга." />
+            <space />
+  <label text="Ясень обыкновенный — дерево высотой 20—30 м (иногда до 40 м) и диаметром ствола до 1 м. Крона высокоподнятая, ажурная. Кора серая" />
+  <label text="трещиноватая (у молодых растений — серо-зелёная гладкая)." />
+            <space />
+  <label text="Почки черноватые, бархатистые. Листья непарноперистые, состоят из 7—15 листочков. Листочки ланцетные или продолговато-яйцевидные, сидячие," />
+  <label text="пильчатые по краю, сверху ярко-зелёного, а снизу светло-зелёного цвета." />
+            <space />
+  <label text="Цветки мелкие, без околоцветника, обоеполые, с двумя тычинками и пестиком с двураздельным рыльцем (реже встречаются цветки без пестика)," />
+  <label text="собраны пучками в метёлки на побегах прошлого года. Растение полигамное. Цветение — до появления листьев, в центре Европейской части" />
+  <label text="России — в апреле—мае." />
+            <space />
+  <label text="Плоды — узкие крылатки, длиной до 5 см, вначале зелёного цвета, потом коричневого, созревают в августе, часто удерживаются на растении всю зиму." />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/2/24/Fraxinus_excelsior_range.svg" icon_size="600" text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Ясень_" />
+          </item>
+
+<!--
+
+          <item name="Ясень " preset_name_label="true">
+            <key key="genus" value="Fraxinus" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="" icon_size="200" text="
+  " />
+            <space />
+  <label text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Ясень_" />
+          </item>
+
+        </group>
+
+-->
+
+<!--         /Род: Ясень -->
+<!--       /Семейство: Маслиновые -->
+<!--     /Порядок: Ясноткоцветные -->
 
       </group>
       <group name="Вечнозелёные" icon="https://upload.wikimedia.org/wikipedia/commons/9/96/Tree_icon.jpg">
