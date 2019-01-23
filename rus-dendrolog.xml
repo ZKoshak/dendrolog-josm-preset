@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190122.6"
+  version="0.0ru20190123.1"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -5929,6 +5929,90 @@
 <!--     /Порядок: Сапиндоцветные -->
 
 <!--     Порядок: 	Розоцветные -->
+
+<!--       Семейство: Вязовые -->
+<!--         Род: Вяз -->
+<!--
+
+        <item name="Вяз (род)" preset_name_label="true">
+          <key key="genus" value="Ulmus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <label icon="" icon_size="200" text="
+  " />
+          <space />
+  <label text="" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+          <link href="https://ru.wikipedia.org/wiki/Вяз" />
+        </item>
+
+        <group name="Вязы (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+-->
+
+          <item name="Вяз гладкий (вар. обыкновенный)" preset_name_label="true">
+            <key key="genus" value="Ulmus" />
+            <key key="species" value="laevis" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Tree_in_Dun_na_R%C3%AD_Forest_Park%2C_near_Kingscourt%2C_Co._Cavan_-_geograph.org.uk_-_995732.jpg/200px-Tree_in_Dun_na_R%C3%AD_Forest_Park%2C_near_Kingscourt%2C_Co._Cavan_-_geograph.org.uk_-_995732.jpg" icon_size="200" text="
+  Вяз гла́дкий, или обыкновенный (лат. Úlmus laévis)" />
+            <space />
+  <label text="Вяз гладкий произрастает практически на всей территории Европы (за исключением Пиренейского полуострова и Британских островов), на Кавказе," />
+  <label text="в Малой Азии и на Урале (Челябинская и Свердловская область), а также в Казахстане. На севере доходит до юго-восточной Швеции (остров Эланд)," />
+  <label text="южной Финляндии, южных районов Республики Карелия, Архангельской области (в Архангельской области он проникает за 63° с.ш., достигая самой" />
+  <label text="северной оконечности своего ареала), Республики Коми." />
+            <space />
+  <label text="Дерево высотой до 40 метров с широкоцилиндрической, слегка закруглённой кверху кроной. Ствол старого вяза может достигать метра в диаметре." />
+  <label text="Сучья толстые, направленные вверх. Кора буро-коричневая, растрескивающаяся, отслаивается тонкими пластинками. У основания ствола крупных" />
+  <label text="деревьев иногда образуются плоские досковидные корни, выполняющие функцию дополнительной опоры. Побеги светло-бурые, блестящие, иногда с седым" />
+  <label text="налётом и чечевичками." />
+            <space />
+  <label text="Листья простые, яйцевидные или овальные, с заострённой верхушкой, у основания сильно неравнобокие, тёмно-зелёного цвета (снизу более светлые)," />
+  <label text="на коротких черешках. Длина листа до 12 см, ширина до 8 см. Край листовой пластинки двоякозубчатый, верхняя сторона листа блестящая, нижняя" />
+  <label text="голая или мягкоопушённая." />
+            <space />
+  <label text="Цветки мелкие, обоеполые, собраны в пучки на длинных цветоножках. Околоцветник пяти— или восьмилопастной, неравнобокий. Цветёт вяз гладкий" />
+  <label text="в апреле — мае, до распускания листьев, опыляется ветром." />
+            <space />
+  <label text="Плод имеет округлое или овальное опушённое крылышко, в центре которого находится семя. Плоды висят пучками на длинных плодоножках." />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/7/76/Ulmus_laevis_range.svg" icon_size="600" text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Вяз_" />
+          </item>
+
+<!--
+
+          <item name="Вяз " preset_name_label="true">
+            <key key="genus" value="Ulmus" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="" icon_size="200" text="
+  " />
+            <space />
+  <label text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Вяз_" />
+          </item>
+
+        </group>
+
+-->
+
+<!--         /Род: Вяз -->
+<!--       /Семейство: Вязовые -->
+
 <!--       Семейство: Розовые -->
 <!--         Род: Рябина -->
 <!--
