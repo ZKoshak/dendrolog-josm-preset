@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190123.1"
+  version="0.0ru20190123.2"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -7231,6 +7231,83 @@
 -->
 
 <!--         /Род: Слива -->
+
+<!--         Род: Груша -->
+
+<!--
+        <item name="Груша (род)" preset_name_label="true">
+          <key key="genus" value="Pyrus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <label icon="" icon_size="200" text="
+  " />
+          <space />
+  <label text="" />
+          <item_separator />
+          <reference ref="orchard_optional_tagging" />
+          <link href="https://ru.wikipedia.org/wiki/Груша" />
+        </item>
+
+        <group name="Груши (виды)" icon="presets/landuse/orchard.svg">
+
+-->
+
+          <item name="Груша обыкновенная (вар. дикая груша)" preset_name_label="true">
+            <key key="genus" value="Pyrus" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/20121023Birne_Hockenheimer_Rheinbogen1.jpg/300px-20121023Birne_Hockenheimer_Rheinbogen1.jpg" icon_size="300" text="
+  Гру́ша обыкнове́нная, или ди́кая груша (лат. Pýrus commúnis)" />
+            <space />
+  <label text="Распространён на территории от Восточной Европы до Западной Азии." />
+            <space />
+  <label text="Именно на основе этого вида выведено большинство культиваров груши, выращиваемых в регионах с умеренным климатом на территории Европы," />
+  <label text="Северной Америки и Австралии (в Западной Азии больше используются два других вида груши — Груша грушелистная (Pyrus pyrifolia) и Груша" />
+  <label text="Бретшнейдера (Pyrus bretschneideri)." />
+            <space />
+  <label text="Дерево высотой до 20 м, иногда крупный кустарник. Побеги колючие." />
+            <space />
+  <label text="Листья продолговато-округлые, коротко заострённые, кожистые, на длинных черешках, при засыхании чернеющие." />
+            <space />
+  <label text="Цветки собраны по 6—12 в щитковидные соцветия, образуются из плодовых почек, сформировавшихся в предыдущем году. Околоцветник двойной," />
+  <label text="пятичленный. Венчик до 3,5 см в диаметре, снежно-белого, иногда розоватого цвета. Тычинок много, они имеют фиолетово-розоватую окраску." />
+  <label text="Нектароносная ткань расположена на открытом цветоложе. Как у дикорастущих, так и у культурных форм цветение обильное, начинается с появлением" />
+  <label text="листьев, в мае, несколько раньше, чем у яблони. Деревья в насаждениях цветут 14—16 дней, отдельные цветки до 5 дней." />
+            <space />
+  <label text="Плоды грушевидные или округлые, созревают в августе — сентябре." />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Груша_обыкновенная" />
+          </item>
+
+<!--
+
+          <item name="Груша " preset_name_label="true">
+            <key key="genus" value="Pyrus" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="" icon_size="200" text="
+  " />
+            <space />
+  <label text="" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Груша_" />
+          </item>
+
+        </group>
+-->
+
+<!--         /Род: Груша -->
+
 <!--       /Семейство: Розовые -->
 <!--     /Порядок: Розоцветные -->
 
