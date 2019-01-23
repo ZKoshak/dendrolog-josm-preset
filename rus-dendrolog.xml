@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190123.10"
+  version="0.0ru20190123.11"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -1783,7 +1783,7 @@
 
       <group name="Тис (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Taxus_baccata_tree_illustration.jpg/176px-Taxus_baccata_tree_illustration.jpg">
 
-        <item name="Тис ягодный(вар. европейский, зеленица, негниючка, негной, красное дерево)" preset_name_label="true">
+        <item name="Тис ягодный(вар. европейский; зеленица, негниючка, негной, красное дерево)" preset_name_label="true">
           <key key="genus" value="Taxus" />
           <key key="species" value="baccata" />
           <key key="leaf_type" value="needleleaved" />
