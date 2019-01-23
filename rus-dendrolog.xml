@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190123.8"
+  version="0.0ru20190123.9"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -179,7 +179,7 @@
           <link href="https://ru.wikipedia.org/wiki/Сосна_пицундская" />
         </item>
 
-        <item name="Сосна Станкевича (разновидность С. калабрийской (турецкой))" preset_name_label="true">
+        <item name="Сосна Станкевича (вар. судакская)(разновидность С. калабрийской (турецкой))" preset_name_label="true">
           <key key="genus" value="Pinus" />
           <key key="species" value="brutia" />
           <key key="varietas" value="stankewiczii" />
