@@ -1,0 +1,2374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
+  author="Artyom «ZKoshak» Krukovsky"
+  ru.author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
+  version="0.0int20190124"
+  link="https://github.com/ZKoshak/dendrolog-josm-preset"
+  icon="https://upload.wikimedia.org/wikipedia/commons/3/30/Forestry_Le%C5%9Bnictwo_%28Beentree%292.svg"
+  shortdescription="Trees growing in Russia"
+  ru.shortdescription="Деревья произрастающие в России"
+  description="Preset for tagging trees growing in Russia"
+  ru.description="Заготовка для тегирования деревьев произрастающих на территории России">
+
+  <chunk id="species_tagging">
+    <text key="name" text="Name" />
+    <text key="start_date" text="When planted" ru.text="Когда посажено" />
+    <text key="height" text="Height (meters)" />
+    <text key="circumference" text="Circumference (meters)" />
+    <text key="survey_date" text="Date of survey" ru.text="Дата обследования" />
+    <combo key="denotation" text="Denotation" values_searchable="true" values_context="tree denotation" >
+      <list_entry value="landmark" short_description="Trees remarkable due to its size or prominent location, usually visible from great distances and useful for navigation." />
+      <list_entry value="natural_monument" short_description="Especially old tree, often with a particular shape. Usually protected for its uniqueness." />
+      <list_entry value="avenue" short_description="Trees aligned along a road." />
+      <list_entry value="urban" short_description="Trees found within settlements, e.g. in parks or spread through residential areas." />
+      <list_entry value="agricultural" short_description="Trees in agricultural use." />
+    </combo>
+    <text key="taxon" text="Taxon" />
+  </chunk>
+
+  <chunk id="genus_tagging">
+    <reference ref="species_tagging" />
+    <text key="species" text="Species" />
+  </chunk>
+
+  <chunk id="optional_tagging">
+    <combo key="nest" text="Presence of nest/nesting box" ru.text="Наличие гнезда/скворечника" values="yes,hollow,man_made" />
+    <text key="nest:habitat" text="Who occupied the nest" ru.text="Кем занято гнездо" />
+    <label text="(desirable species or genus, in Latin)" ru.text="(желательно вид или род, на латыни)" />
+    <combo key="animal_breeding" text="Availability of animal feeders" ru.text="Наличие кормушки" values="yes,bird,deer,squirell,moose" />
+    <label text="(can be specified for feeding what animals are used, in english)" ru.text="(можно указать для подкормки каких животных используется, на английском)" />
+    <text key="ref" text="Reference" />
+    <text key="description" text="Description" />
+    <text key="note" text="Note" />
+  </chunk>
+
+  <chunk id="orchard_optional_tagging">
+    <reference ref="optional_tagging" />
+  </chunk>
+
+  <group name="RUS:Dendrolog" icon="https://upload.wikimedia.org/wikipedia/commons/3/30/Forestry_Le%C5%9Bnictwo_%28Beentree%292.svg">
+
+<!-- Отдел: Хвойные -->
+
+    <group name="Conifer" ru.name="Хвойные" icon="https://upload.wikimedia.org/wikipedia/commons/f/f6/Map_marker_icon_%E2%80%93_Nicolas_Mollet_%E2%80%93_Forest_%E2%80%93_Nature_%E2%80%93_simple.png">
+<!--   Класс: Хвойные -->
+<!--     Порядок: Сосновые -->
+<!--       Семейство: Сосновые -->
+<!--         Род: Сосна -->
+
+      <item name="Pine (genus)" ru.name="Сосна (род)" preset_name_label="true">
+        <key key="genus" value="Pinus" />
+        <key key="leaf_type" value="needleleaved" />
+        <key key="leaf_cycle" value="evergreen" />
+        <reference ref="genus_tagging" />
+        <item_separator />
+        <reference ref="optional_tagging" />
+      </item>
+
+      <group name="Pine (species)" ru.name="Сосны (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/5/5f/Meuble_h%C3%A9raldique_Pin_maritime.svg">
+
+        <item name="Scots pine" ru.name="Сосна обыкновенная" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="sylvestris" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Crimean pine (ver.: pine of Pallas)(subsp. P. nigra)" ru.name="Сосна крымская (вар.: Палласа) (подвид С. чёрной)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="nigra" />
+          <key key="subspecies" value="pallasiana" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Pitsundian Pine (var. P. brutia (Turkish pine))" ru.name="Сосна пицундская (разновидность С. калабрийской (турецкой))" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="brutia" />
+          <key key="varietas" value="pityusa" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Pine of Stankiewicz (var. P. brutia (Turkish pine))" ru.name="Сосна Станкевича (вар. судакская)(разновидность С. калабрийской (турецкой))" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="brutia" />
+          <key key="varietas" value="stankewiczii" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Japanese red pine (ver. Korean red pine)" ru.name="Сосна густоцветковая (вар.: красная японская)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="densiflora" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Korean pine (ver. Chinese pinenut)" ru.name="Сосна корейская (вар.: кедровая корейская, Корейский кедр, Маньчжурский кедр)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="koraiensis" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Siberian dwarf pine (ver.: dwarf stone pine, Japanese stone pine, creeping pine)" ru.name="Сосна стланиковая (вар.: карликовая, плачущая, Кедровый стланик)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="pumila" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Siberian pine" ru.name="Сосна сибирская кедровая (вар.: Сибирский кедр)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="sibirica" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Pinus sylvestris var. cretacea" ru.name="Сосна меловая (разновидность С. обыкновенной)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="sylvestris" />
+          <key key="varietas" value="cretacea" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+      </group>
+
+<!--         /Род: Сосна -->
+<!--         Род: Ель -->
+
+      <item name="Spruce (genus)" ru.name="Ель (род)" preset_name_label="true">
+        <key key="genus" value="Picea" />
+        <key key="leaf_type" value="needleleaved" />
+        <key key="leaf_cycle" value="evergreen" />
+        <reference ref="genus_tagging" />
+        <item_separator />
+        <reference ref="optional_tagging" />
+      </item>
+
+      <group name="Spruce (species)" ru.name="Ели (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/d/d9/Pinus_vector_green.svg">
+
+        <item name="Norway spruce (ver. European spruce)" ru.name="Ель обыкновенная (вар.: европейская)" preset_name_label="true">
+          <key key="genus" value="Picea" />
+          <key key="species" value="abies" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Sakhalin spruce (ver. Glehn’s spruce)" ru.name="Ель Глена (вар.: Красная ель, Сахалинская ель)" preset_name_label="true">
+          <key key="genus" value="Picea" />
+          <key key="species" value="glehnii" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Ezo spruce (ver.: Yezo spruce, Hondo spruce)" ru.name="Ель аянская (вар.: мелкосемянная)" preset_name_label="true">
+          <key key="genus" value="Picea" />
+          <key key="species" value="jezoensis" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Korean spruce" ru.name="Ель корейская" preset_name_label="true">
+          <key key="genus" value="Picea" />
+          <key key="species" value="koraiensis" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Oriental spruce (ver. Caucasian spruce)" ru.name="Ель восточная (вар.: Кавказская ель)" preset_name_label="true">
+          <key key="genus" value="Picea" />
+          <key key="species" value="orientalis" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Siberian spruce" ru.name="Ель сибирская" preset_name_label="true">
+          <key key="genus" value="Picea" />
+          <key key="species" value="obovata" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Blue spruce (ver.: green spruce, white spruce, Colorado spruce)" ru.name="Ель голубая (вар.: колючая)" preset_name_label="true">
+          <key key="genus" value="Picea" />
+          <key key="species" value="pungens" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Finnish Spruce" ru.name="Ель финская" preset_name_label="true">
+          <key key="genus" value="Picea" />
+          <key key="species" value="×fennica" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+      </group>
+
+<!--         /Род: Ель -->
+<!--         Род: Кедр -->
+
+      <group name="Cedar (species)" ru.name="Кедры (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/5/54/Meuble_H%C3%A9raldique_C%C3%A8dre_naturel.svg">
+
+        <item name="Himalayan cedar (ver. deodar/devdar/devadar/devadaru)" ru.name="Кедр гималайский (вар: Деодар)" preset_name_label="true">
+          <key key="genus" value="Cedrus" />
+          <key key="species" value="deodara" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Lebanon cedar" ru.name="Кедр ливанский" preset_name_label="true">
+          <key key="genus" value="Cedrus" />
+          <key key="species" value="libani" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+      </group>
+
+<!--         /Род: Кедр -->
+<!--         Род: Пихта -->
+
+      <item name="Fir (genus)" ru.name="Пихта (род)" preset_name_label="true">
+        <key key="genus" value="Abies" />
+        <key key="leaf_type" value="needleleaved" />
+        <key key="leaf_cycle" value="evergreen" />
+        <reference ref="genus_tagging" />
+        <item_separator />
+        <reference ref="optional_tagging" />
+      </item>
+
+      <group name="Fir (species)" ru.name="Пихты (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/b/ba/Dougfir.jpg">
+
+        <item name="Siberian fir" ru.name="Пихта сибирская" preset_name_label="true">
+          <key key="genus" value="Abies" />
+          <key key="species" value="sibirica" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Nordmann fir (ver. Caucasian fir)" ru.name="Пихта Нордмана (вар.: кавказская)" preset_name_label="true">
+          <key key="genus" value="Abies" />
+          <key key="species" value="nordmanniana" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Khingan fir" ru.name="Пихта белокорая (вар.: почкочешуйчатая)" preset_name_label="true">
+          <key key="genus" value="Abies" />
+          <key key="species" value="nephrolepis" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Needle fir (ver. Manchurian fir)" ru.name="Пихта цельнолистная (вар.: чёрная маньчжурская)" preset_name_label="true">
+          <key key="genus" value="Abies" />
+          <key key="species" value="holophylla" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Sakhalin fir" ru.name="Пихта сахалинская" preset_name_label="true">
+          <key key="genus" value="Abies" />
+          <key key="species" value="sachalinensis" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Abies gracilis" ru.name="Пихта грациозная (вар.: камчатская, изящная)" preset_name_label="true">
+          <key key="genus" value="Abies" />
+          <key key="species" value="gracilis" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+      </group>
+
+<!--         /Род: Пихта -->
+<!--         Род: Лиственница -->
+
+      <item name="Larch (genus)" ru.name="Лиственница (род)" preset_name_label="true">
+        <key key="genus" value="Larix" />
+        <key key="leaf_type" value="needleleaved" />
+        <key key="leaf_cycle" value="deciduous" />
+        <reference ref="genus_tagging" />
+        <item_separator />
+        <reference ref="optional_tagging" />
+      </item>
+
+      <group name="Larch (species)" ru.name="Лиственницы (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Larix_decidua_tree_illustration.jpg/128px-Larix_decidua_tree_illustration.jpg">
+
+        <item name="European larch" ru.name="Лиственница европейская (вар.: опадающая)" preset_name_label="true">
+          <key key="genus" value="Larix" />
+          <key key="species" value="decidua" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Siberian larch (ver. Russian larch)" ru.name="Лиственница сибирская" preset_name_label="true">
+          <key key="genus" value="Larix" />
+          <key key="species" value="sibirica" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Larix × czekanowskii" ru.name="Лиственница Чекановского" preset_name_label="true">
+          <key key="genus" value="Larix" />
+          <key key="species" value="czekanowskii" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Dahurian larch" ru.name="Лиственница Гмелина (вар.: даурская)" preset_name_label="true">
+          <key key="genus" value="Larix" />
+          <key key="species" value="gmelinii" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Japanese larch (ver. karamatsu)" ru.name="Лиственница Кемпфера (вар.: тонкочешуйчатая, японская)" preset_name_label="true">
+          <key key="genus" value="Larix" />
+          <key key="species" value="kaempferi" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Larix lubarskii" ru.name="Лиственница Любарского" preset_name_label="true">
+          <key key="genus" value="Larix" />
+          <key key="species" value="× lubarskii" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Olga Bay larch (ver. Olgan larch)" ru.name="Лиственница ольгинская" preset_name_label="true">
+          <key key="genus" value="Larix" />
+          <key key="species" value="gmelinii" />
+          <key key="varietas" value="olgensis" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Larix amurensis" ru.name="Лиственница амурская" preset_name_label="true">
+          <key key="genus" value="Larix" />
+          <key key="species" value="amurensis" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Larix kamtschatica" ru.name="Лиственница камчатская" preset_name_label="true">
+          <key key="genus" value="Larix" />
+          <key key="species" value="kamtschatica" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Larix cajanderi" ru.name="Лиственница Каяндера" preset_name_label="true">
+          <key key="genus" value="Larix" />
+          <key key="species" value="cajanderi" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Larix komarovii" ru.name="Лиственница Комарова" preset_name_label="true">
+          <key key="genus" value="Larix" />
+          <key key="species" value="komarovii" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Larix kurilensis" ru.name="Лиственница курильская" preset_name_label="true">
+          <key key="genus" value="Larix" />
+          <key key="species" value="kurilensis" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Larix middendorffii" ru.name="Лиственница Миддендорфа" preset_name_label="true">
+          <key key="genus" value="Larix" />
+          <key key="species" value="middendorffii" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Larix ochotensis" ru.name="Лиственница охотская" preset_name_label="true">
+          <key key="genus" value="Larix" />
+          <key key="species" value="ochotensis" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Larix maritima" ru.name="Лиственница приморская" preset_name_label="true">
+          <key key="genus" value="Larix" />
+          <key key="species" value="maritima" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+      </group>
+
+<!--         /Род: Лиственница -->
+<!--       /Семейство: Сосновые -->
+<!--       Семейство: Кипарисовые -->
+<!--         Род: Кипарис -->
+
+      <item name="Cypress (genus)" ru.name="Кипарис (род)" preset_name_label="true">
+        <key key="genus" value="Cupressus" />
+        <key key="leaf_type" value="needleleaved" />
+        <key key="leaf_cycle" value="evergreen" />
+        <reference ref="genus_tagging" />
+        <item_separator />
+        <reference ref="optional_tagging" />
+      </item>
+
+      <item name="Mediterranean cypress (ver.: Italian cypress, Tuscan cypress, Persian cypress, pencil pine)" ru.name="Кипарис вечнозелёный" preset_name_label="true">
+        <key key="genus" value="Cupressus" />
+        <key key="species" value="sempervirens" />
+        <key key="leaf_type" value="needleleaved" />
+        <key key="leaf_cycle" value="evergreen" />
+        <reference ref="species_tagging" />
+        <item_separator />
+        <reference ref="optional_tagging" />
+      </item>
+
+<!--         /Род: Кипарис -->
+<!--         Род: Можжевельник -->
+
+      <item name="Juniper (genus)" ru.name="Можжевельник (род)" preset_name_label="true">
+        <key key="genus" value="Juniperus" />
+        <key key="leaf_type" value="needleleaved" />
+        <key key="leaf_cycle" value="evergreen" />
+        <reference ref="genus_tagging" />
+        <item_separator />
+        <reference ref="optional_tagging" />
+      </item>
+
+      <group name="Juniper (species)" ru.name="Можжевельники (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/a/ab/H%C3%A9raldique_meuble_Grappe_de_geni%C3%A8vre.svg">
+
+        <item name="Common juniper" ru.name="Можжевельник обыкновенный (вар.: Верес)" preset_name_label="true">
+          <key key="genus" value="Juniperus" />
+          <key key="species" value="communis" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Greek juniper (ver. Persian juniper)" ru.name="Можжевельник высокий" preset_name_label="true">
+          <key key="genus" value="Juniperus" />
+          <key key="species" value="excelsa" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Foetid juniper (ver. stinking juniper)" ru.name="Можжевельник вонючий" preset_name_label="true">
+          <key key="genus" value="Juniperus" />
+          <key key="species" value="foetidissima" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Cade juniper (ver.: prickly juniper, prickly cedar, sharp cedar)" ru.name="Можжевельник колючий (вар.: красный, карандашное дерево" preset_name_label="true">
+          <key key="genus" value="Juniperus" />
+          <key key="species" value="oxycedrus" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Temple juniper" ru.name="Можжевельник твёрдый(вар.: жёсткий, твёрдолистный" preset_name_label="true">
+          <key key="genus" value="Juniperus" />
+          <key key="species" value="rigida" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+      </group>
+
+<!--         /Род: Можжевельник -->
+<!--       /Семейство: Кипарисовые -->
+<!--       Семейство: Тисовые -->
+<!--         Род: Тис -->
+
+      <item name="Yew (genus)" ru.name="Тис (род)" preset_name_label="true">
+        <key key="genus" value="Taxus" />
+        <key key="leaf_type" value="needleleaved" />
+        <key key="leaf_cycle" value="evergreen" />
+        <reference ref="genus_tagging" />
+        <item_separator />
+        <reference ref="optional_tagging" />
+      </item>
+
+      <group name="Yew (species)" ru.name="Тис (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Taxus_baccata_tree_illustration.jpg/176px-Taxus_baccata_tree_illustration.jpg">
+
+        <item name="Yew (ver.: common yew, English yew, European yew)" ru.name="Тис ягодный(вар. европейский; зеленица, негниючка, негной, красное дерево)" preset_name_label="true">
+          <key key="genus" value="Taxus" />
+          <key key="species" value="baccata" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Japanese yew (ver. spreading yew)" ru.name="Тис остроконечный(вар.: дальневосточный)" preset_name_label="true">
+          <key key="genus" value="Taxus" />
+          <key key="species" value="остроконечный" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+      </group>
+
+<!--         /Род: Тис -->
+<!--       /Семейство: Тисовые -->
+<!--     /Порядок: Сосновые -->
+<!--   /Класс: Хвойные -->
+    </group>
+
+<!-- /Отдел: Хвойные -->
+<!-- Отдел: Цветковые -->
+
+    <group name="Broadleaved" ru.name="Широколиственные" icon="https://upload.wikimedia.org/wikipedia/commons/2/20/Meuble_h%C3%A9raldique_Bouquet_arbres.svg">
+      <group name="Deciduous" ru.name="Листопадные" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+<!--   Класс: Двудольные -->
+<!--     Порядок: Магнолиецветные -->
+<!--       Семейство: Магнолиевые -->
+<!--         Род: Магнолия  -->
+
+        <item name="Magnolia (genus)" ru.name="Магнолия (род)" preset_name_label="true">
+          <key key="genus" value="Magnolia" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <group name="Magnolia (species)" ru.name="Магнолии (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/BD_n173_w1150_%2837971171811%29.jpg/165px-BD_n173_w1150_%2837971171811%29.jpg">
+
+          <item name="Japanese bigleaf magnolia (ver. Japanese whitebark magnolia)" ru.name="Магнолия обратнояйцевидная" preset_name_label="true">
+            <key key="genus" value="Magnolia" />
+            <key key="species" value="obovata" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Cucumber tree (ver.: cucumbertree, cucumber magnolia, blue magnolia)" ru.name="Магнолия длиннозаострённая" preset_name_label="true">
+            <key key="genus" value="Magnolia" />
+            <key key="species" value="acuminata" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Lilytree (ver. Yulan magnolia)" ru.name="Магнолия голая" preset_name_label="true">
+            <key key="genus" value="Magnolia" />
+            <key key="species" value="denudata" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Магнолия -->
+<!--         Род: Лириодендрон -->
+
+          <item name="American tulip tree (ver.: tulipwood, tulip poplar, whitewood, fiddletree, yellow-poplar)" ru.name="Лириодендрон тюльпановый (вар.: тюльпанное дерево настоящее, лиран)" preset_name_label="true">
+            <key key="genus" value="Liriodendron" />
+            <key key="species" value="tulipifera" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Лириодендрон -->
+<!--       /Семейство: Магнолиевые -->
+<!--     /Порядок: Магнолиецветные -->
+<!--     Порядок: Бересклетоцветные -->
+<!--       Семейство: Бересклетовые -->
+<!--         Род: Бересклет -->
+
+        <item name="Spindle tree (genus)(ver. burning-bush, strawberry-bush, wahoo, wintercreeper, euonymus)" ru.name="Бересклет (род)" preset_name_label="true">
+          <key key="genus" value="Euonymus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <group name="Spindle tree (species)(ver. burning-bush, strawberry-bush, wahoo, wintercreeper, euonymus)" ru.name="Бересклеты (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+          <item name="European spindle (ver. common spindle)" ru.name="Бересклет европейский (вар.: Бруслина)" preset_name_label="true">
+            <key key="genus" value="Euonymus" />
+            <key key="species" value="europaeus" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Euonymus maackii" ru.name="Бересклет Маака" preset_name_label="true">
+            <key key="genus" value="Euonymus" />
+            <key key="species" value="maackii" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Euonymus macropterus" ru.name="Бересклет большекрылый" preset_name_label="true">
+            <key key="genus" value="Euonymus" />
+            <key key="species" value="macropterus" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Euonymus verrucosus" ru.name="Бересклет бородавчатый" preset_name_label="true">
+            <key key="genus" value="Euonymus" />
+            <key key="species" value="verrucosus" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Euonymus planipes" ru.name="Бересклет плоскочерешковый" preset_name_label="true">
+            <key key="genus" value="Euonymus" />
+            <key key="species" value="planipes" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Бересклет -->
+<!--       /Семейство: Бересклетовые -->
+<!--     /Порядок: Бересклетоцветные -->
+<!--     Порядок: Бобовоцветные -->
+<!--       Семейство: Бобовые -->
+<!--         Род: Церцис -->
+
+        <item name="Redbuds (genus)" ru.name="Церцис (вар.: Багрянник)(род)" preset_name_label="true">
+          <key key="genus" value="Cercis" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <group name="Redbuds (species)" ru.name="Церцис (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+          <item name="Judas-tree" ru.name="Багрянник европейский (вар.: Церцис европейский; Иудино дерево)" preset_name_label="true">
+            <key key="genus" value="Cercis" />
+            <key key="species" value="siliquastrum" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Eastern redbud" ru.name="Багрянник канадский (вар.: Церцис канадский" preset_name_label="true">
+            <key key="genus" value="Cercis" />
+            <key key="species" value="canadensis" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Церцис -->
+<!--         Род: Гледичия  -->
+
+          <item name="Honey locust (ver. thorny locust)" ru.name="Гледичия трёхколючковая (вар.: обыкновенная)" preset_name_label="true">
+            <key key="genus" value="Gleditsia" />
+            <key key="species" value="triacanthos" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Гледичия  -->
+<!--         Род: Альбиция -->
+
+          <item name="Persian silk tree (ver.: pink silk tree, pink siris, Lenkoran acacia, bastard tamarind)" ru.name="Альбиция ленкоранская (вар.: шёлковое дерево, ленкоранская акация)" preset_name_label="true">
+            <key key="genus" value="Albizia" />
+            <key key="species" value="julibrissin" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Альбиция -->
+<!--         Род: Бобовник -->
+
+          <item name="Laburnum anagyroides (ver.: common laburnum, golden chain, golden rain)" ru.name="Бобовник анагировидный (вар.анагиролистный, Золотой дождь): " preset_name_label="true">
+            <key key="genus" value="Laburnum" />
+            <key key="species" value="anagyroides" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Scotch laburnum (ver.: Scottish laburnum, alpine laburnum)" ru.name="Бобовник альпийский" preset_name_label="true">
+            <key key="genus" value="Laburnum" />
+            <key key="species" value="alpinum" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Бобовник -->
+<!--         Род: Маакия -->
+
+          <item name="Amur maackia" ru.name="Маакия амурская (вар.: кладрастис амурский; акация Маака, акатник амурский)" preset_name_label="true">
+            <key key="genus" value="Maackia" />
+            <key key="species" value="amurensis" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Маакия -->
+<!--         Род: Робиния -->
+
+        <group name="Robinia (ver. locusts)" ru.name="Робинии (вар. псевдоакация, «белая акация»)(виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+          <item name="Robinia pseudoacacia (ver.: black locust, false acacia)" ru.name="Робиния ложноакациевая (вар.: обыкновенная, «белая акация»)" preset_name_label="true">
+            <key key="genus" value="Robinia" />
+            <key key="species" value="pseudoacacia" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Robinia luxurians" ru.name="Робиния пышная" preset_name_label="true">
+            <key key="genus" value="Robinia" />
+            <key key="species" value="luxurians" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Robinia viscosa (ver. clammy locust)" ru.name="Робиния клейкая" preset_name_label="true">
+            <key key="genus" value="Robinia" />
+            <key key="species" value="viscosa" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Робиния -->
+<!--         Род: Софора -->
+
+          <item name="Styphnolobium japonicum (ver.: Sophora japonica, Japanese pagoda tree, Chinese scholar tree)" ru.name="Софора японская (вар.: Стифнолобий японский)" preset_name_label="true">
+            <key key="genus" value="Styphnolobium" />
+            <key key="species" value="japonicum" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Софора -->
+<!--       /Семейство: Бобовые -->
+<!--     /Порядок: Бобовоцветные -->
+<!--     Порядок: Букоцветные -->
+<!--       Семейство: Берёзовые -->
+<!--         Род: Берёза -->
+
+        <item name="Birch (genus)" ru.name="Берёза (род)" preset_name_label="true">
+          <key key="genus" value="Betula" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <group name="Birch (species)" ru.name="Берёзы (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Betula_pendula_Silhouette_%28oddsock%29.png/150px-Betula_pendula_Silhouette_%28oddsock%29.png">
+
+          <item name="Silver birch (ver.: warty birch, European white birch, East Asian white birch)" ru.name="Берёза повислая (вар.: бородавчатая, плакучая, повисшая; чистяк, чистуха, чистушка)" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="pendula" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Downy birch (ver.: moor birch, white birch, European white birch, hairy birch)" ru.name="Берёза пушистая (вар.: опушённая; глушняк, глушина, глушинина)" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="pubescens" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Yellow birch (ver. golden birch)" ru.name="Берёза жёлтая (вар.: аллеганская)" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="alleghaniensis" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Asian black birch (ver. Daur birch)" ru.name="Берёза даурская (вар. чёрная дальневосточная)" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="davurica" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Erman's birch" ru.name="Берёза Эрмана (вар.: каменная)" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="ermanii" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Betula costata" ru.name="Берёза ребристая (вар. жёлтая дальневосточная)" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="costata" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Betula forrestii" ru.name="Берёза Форреста" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="forrestii" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Betula lanata" ru.name="Берёза шерстистая (вар. каменная): " preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="lanata" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Sweet birch (ver.: black birch, cherry birch, mahogany birch, spice birch)" ru.name="Берёза вишнёвая (вар.: тягучая, сладкая)" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="lenta" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Monarch Birch" ru.name="Берёза Максимовича" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="maximowicziana" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Betula microphylla" ru.name="Берёза мелколистная" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="microphylla" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Paper birch (ver.: canoe birch, white birch)" ru.name="Берёза бумажная (вар. канойская, американская белая)" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="papyrifera" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Japanese white birch (ver. Siberian silver birch)" ru.name="Берёза плосколистная (вар.: японская белая, азиатская, манчжурская)" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="platyphylla" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Radde's Birch" ru.name="Берёза Радде" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="raddeana" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Betula schmidtii" ru.name="Берёза Шмидта (вар.: железная)" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="schmidtii" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Dwarf birch" ru.name="Берёза карликовая (вар: малорослая, карличная; берёзовый ёрник, сланец берёзовый , ерник-сланец, карла, ера." preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="nana" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Betula oycoviensis" ru.name="Берёза ойковская" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="oycoviensis" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Karelian birch (var. B. pendula)" ru.name="Карельская берёза (разновидность берёзы повислой)" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="pendula" />
+            <key key="varietas" value="carelica" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="`Youngii` birch (cult. B. pendula)" ru.name="Берёза Юнга (вар.: «плакучая берёза»)" preset_name_label="true">
+            <key key="genus" value="Betula" />
+            <key key="species" value="pendula" />
+            <key key="cultivar" value="Youngii" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Берёза -->
+<!--         Род: Граб -->
+
+        <item name="Hornbeam (genus)" ru.name="Граб (род)" preset_name_label="true">
+          <key key="genus" value="Carpinus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <group name="Hornbeam (species)" ru.name="Грабы (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+          <item name="European hornbeam (ver. common hornbeam)" ru.name="Граб обыкновенный (вар.: европейский)" preset_name_label="true">
+            <key key="genus" value="Carpinus" />
+            <key key="species" value="betulus" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Caucasian hornbeam" ru.name="Граб кавказский" preset_name_label="true">
+            <key key="genus" value="Carpinus" />
+            <key key="species" value="caucasica" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="American hornbeam (ver.: blue-beech, musclewood)" ru.name="Граб каролинский (вар.: американский)" preset_name_label="true">
+            <key key="genus" value="Carpinus" />
+            <key key="species" value="caroliniana" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Sawa hornbeam" ru.name="Граб сердцелистный" preset_name_label="true">
+            <key key="genus" value="Carpinus" />
+            <key key="species" value="cordata" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Oriental hornbeam" ru.name="Граб восточный, (вар.: чёрный; Грабинник)" preset_name_label="true">
+            <key key="genus" value="Carpinus" />
+            <key key="species" value="orientalis" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Граб -->
+<!--         Род: Лещина -->
+
+        <item name="Hazel (genus)" ru.name="Лещина (вар.: орешник)(род)" preset_name_label="true">
+          <key key="genus" value="Corylus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <group name="Hazel (species)" ru.name="Лещина (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+          <item name="Common hazel" ru.name="Лещина обыкновенная (вар.: Орешник, Лесной орех)" preset_name_label="true">
+            <key key="genus" value="Corylus" />
+            <key key="species" value="avellana" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Turkish hazel (ver. Turkish filbert)" ru.name="Лещина древовидная (вар.: Орешник или Орех медвежий)" preset_name_label="true">
+            <key key="genus" value="Corylus" />
+            <key key="species" value="colurna" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Filbert" ru.name="Лещина крупная (вар.: «ломбардский орех», «фундук»)" preset_name_label="true">
+            <key key="genus" value="Corylus" />
+            <key key="species" value="maxima" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Лещина -->
+<!--         Род: Ольха -->
+
+        <item name="Alder (genus)" ru.name="Ольха (вар.: вильха, вольха, елоха, елха, елшина, лешинник, олешник, олех, ольшняк)(род)" preset_name_label="true">
+          <key key="genus" value="Alnus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <group name="Alder (species)" ru.name="Ольха (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+          <item name="Common alder (ver: black alder, European alder)" ru.name="Ольха чёрная (вар.: клейкая, европейская)" preset_name_label="true">
+            <key key="genus" value="Alnus" />
+            <key key="species" value="glutinosa" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Grey alder (ver. speckled alder)" ru.name="Ольха серая (вар.: белая; Елоха)" preset_name_label="true">
+            <key key="genus" value="Alnus" />
+            <key key="species" value="incana" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Green alder" ru.name="Ольха зелёная (вар.: горная, кустарниковая, вырезанная, камчатская)" preset_name_label="true">
+            <key key="genus" value="Alnus" />
+            <key key="species" value="alnobetula" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Italian alder" ru.name="Ольха итальянская (вар.: сердцевидная, сердцелистная)" preset_name_label="true">
+            <key key="genus" value="Alnus" />
+            <key key="species" value="cordata" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Caucasian alder" ru.name="Ольха сердцелистная" preset_name_label="true">
+            <key key="genus" value="Alnus" />
+            <key key="species" value="subcordata" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Alnus mandshurica" ru.name="Ольха манчжурская" preset_name_label="true">
+            <key key="genus" value="Alnus" />
+            <key key="species" value="mandshurica" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Montane alder" ru.name="Ольха Максимовича" preset_name_label="true">
+            <key key="genus" value="Alnus" />
+            <key key="species" value="maximowiczii" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="East Asian alder" ru.name="Ольха японская" preset_name_label="true">
+            <key key="genus" value="Alnus" />
+            <key key="species" value="japonica" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Manchurian alder" ru.name="Ольха пушистая (вар.: шерстистая, волосистая, сибирская)" preset_name_label="true">
+            <key key="genus" value="Alnus" />
+            <key key="species" value="hirsuta" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Alnus glutinosa subsp. barbata" ru.name="Ольха бородатая (подвид ольхи чёрной)" preset_name_label="true">
+            <key key="genus" value="Alnus" />
+            <key key="species" value="glutinosa" />
+            <key key="subspecies" value="barbata" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Alnus fruticosa (subsp. A. viridis)" ru.name="Ольха кустарниковая (вар: душекия кустарниковая, ольховник кустарниковый)(подвид ольхи зелёной)" preset_name_label="true">
+            <key key="genus" value="Alnus" />
+            <key key="species" value="alnobetula" />
+            <key key="subspecies" value="fruticosa" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Ольха -->
+<!--         Род: Хмелеграб -->
+
+        <item name="Hop-hornbeam (genus)" ru.name="Хмелеграб (род)" preset_name_label="true">
+          <key key="genus" value="Ostrya" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <group name="Hop-hornbeam (species)" ru.name="Хмелеграбы (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+          <item name="European hop-hornbeam" ru.name="Хмелеграб обыкновенный" preset_name_label="true">
+            <key key="genus" value="Ostrya" />
+            <key key="species" value="carpinifolia" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="American hophornbeam (ver.: eastern hophornbeam, hardhack, hackmatack, ironwood, leverwood, remen)" ru.name="Хмелеграб виргинский (вар.: американский)" preset_name_label="true">
+            <key key="genus" value="Ostrya" />
+            <key key="species" value="virginiana" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Хмелеграб -->
+<!--       /Семейство: Берёзовые -->
+<!--       Семейство: Буковые -->
+<!--         Род: Бук -->
+
+        <item name="Beech (genus)" ru.name="Бук (род)" preset_name_label="true">
+          <key key="genus" value="Fagus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <space />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <group name="Beech (species)" ru.name="Бук (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+          <item name="European beech (ver. common beech)" ru.name="Бук европейский (вар.: лесной)" preset_name_label="true">
+            <key key="genus" value="Fagus" />
+            <key key="species" value="sylvatica" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Oriental beech" ru.name="Бук восточный (вар.: кавказский)" preset_name_label="true">
+            <key key="genus" value="Fagus" />
+            <key key="species" value="orientalis" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="North American beech" ru.name="Бук крупнолистный" preset_name_label="true">
+            <key key="genus" value="Fagus" />
+            <key key="species" value="grandifolia" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Japanese blue beech (ver.: inubuna, kurobuna)" ru.name="Бук японский" preset_name_label="true">
+            <key key="genus" value="Fagus" />
+            <key key="species" value="japonica" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Бук -->
+<!--         Род: Дуб -->
+
+        <item name="Oak (genus)" ru.name="Дуб (род)" preset_name_label="true">
+          <key key="genus" value="Quercus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <group name="Oak (species)" ru.name="Дубы (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/e/ef/Quercus_robur_Silhouette_%28oddsock%29.png">
+
+          <item name="Common oak (ver.: pedunculate oak, European oak, English oak)" ru.name="Дуб черешчатый (вар.: летний, обыкновенный, английский)" preset_name_label="true">
+            <key key="genus" value="Quercus" />
+            <key key="species" value="robur" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Sessile oak (ver.: Cornish oak, durmast oak)" ru.name="Дуб скальный (вар.: грузинский, Уэльский дуб)" preset_name_label="true">
+            <key key="genus" value="Quercus" />
+            <key key="species" value="petraea" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Mongolian oak" ru.name="Дуб монгольский" preset_name_label="true">
+            <key key="genus" value="Quercus" />
+            <key key="species" value="mongolica" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Northern red oak (ver. champion oak)" ru.name="Дуб красный (вар.: остролистный, канадский, северный)" preset_name_label="true">
+            <key key="genus" value="Quercus" />
+            <key key="species" value="rubra" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Pin oak (ver. swamp Spanish oak)" ru.name="Дуб болотный" preset_name_label="true">
+            <key key="genus" value="Quercus" />
+            <key key="species" value="palustris" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Chestnut-leaved oak" ru.name="Дуб каштанолистный" preset_name_label="true">
+            <key key="genus" value="Quercus" />
+            <key key="species" value="castaneifolia" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Turkey oak (ver. Austrian oak)" ru.name="Дуб австрийский (вар.: кошенильный, турецкий)" preset_name_label="true">
+            <key key="genus" value="Quercus" />
+            <key key="species" value="cerris" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Caucasian oak (ver. Persian oak)" ru.name="Дуб крупнопыльниковый" preset_name_label="true">
+            <key key="genus" value="Quercus" />
+            <key key="species" value="macranthera" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Korean oak (ver.: Japanese emperor oak, daimyo oak)" ru.name="Дуб зубчатый" preset_name_label="true">
+            <key key="genus" value="Quercus" />
+            <key key="species" value="dentata" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Pontine oak (ver. Armenian oak)" ru.name="Дуб понтийский (вар.: армя́нский)" preset_name_label="true">
+            <key key="genus" value="Quercus" />
+            <key key="species" value="pontica" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Strandzha oak" ru.name="Дуб Гартвиса" preset_name_label="true">
+            <key key="genus" value="Quercus" />
+            <key key="species" value="Hartwissiana" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Downy oak (ver. pubescent oak)" ru.name="Дуб пушистый" preset_name_label="true">
+            <key key="genus" value="Quercus" />
+            <key key="species" value="pubescens" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Дуб -->
+<!--         Род: Каштан -->
+
+          <item name="Sweet chestnut (ver.: Spanish chestnut, Portuguese chestnut, marron)" ru.name="Каштан посевной (вар.: съедобный, настоящий, благородный)" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/8/88/Castanea_sativa_Silhouette_%28oddsock%29.png">
+            <key key="genus" value="Castanea" />
+            <key key="species" value="sativa" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Каштан -->
+<!--         Род: Лапина (Крылоорешник, Птерокария) -->
+
+          <item name="Caucasian wingnut (ver. Caucasian walnut, Pterocarya fraxinifolia)" ru.name="Лапина ясенелистная(вар.: Крылоорешник, Птерокария)" preset_name_label="true">
+            <key key="genus" value="Pterocarya" />
+            <key key="species" value="fraxinifolia" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род:  -->
+<!--       /Семейство: Буковые -->
+<!--     /Порядок: Букоцветные -->
+<!--   /Класс: Двудольные -->
+<!--   Класс:  -->
+<!--     Порядок:  -->
+<!--       Семейство:  -->
+<!--         Род:  -->
+<!--
+
+        <item name=" (род)" preset_name_label="true">
+          <key key="genus" value="" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <group name=" (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+          <item name="" preset_name_label="true">
+            <key key="genus" value="" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+-->
+
+<!--         /Род:  -->
+<!--       /Семейство:  -->
+<!--     /Порядок:  -->
+<!--   /Класс:  -->
+
+<!--     Порядок: Мальпигиецветные -->
+<!--       Семейство: Ивовые -->
+<!--         Род: Ива -->
+
+          <item name="White willow (ver. golden willow)" ru.name="Ива белая (вар.: серебристая; Ветла, Белолоз, Белотал)" preset_name_label="true">
+            <key key="genus" value="Salix" />
+            <key key="species" value="alba" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Ива -->
+<!--         Род: Тополь -->
+
+          <item name="Aspen (ver.: common aspen, Eurasian aspen, European aspen, quaking aspen)" ru.name="Осина обыкновенная (вар. Тополь дрожащий)" preset_name_label="true">
+            <key key="genus" value="Populus" />
+            <key key="species" value="tremula" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Black poplar (ver. cottonwood)" ru.name="Тополь чёрный (вар. Осокорь)" preset_name_label="true">
+            <key key="genus" value="Populus" />
+            <key key="species" value="nigra" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Тополь -->
+<!--       /Семейство: Ивовые -->
+<!--     /Порядок: Мальпигиецветные -->
+<!--     Порядок: Сапиндоцветные -->
+<!--       Семейство: Сапиндовые -->
+<!--         Род: Клён -->
+
+          <item name="Field maple" ru.name="Клён полевой (вар.: равнинный; Неклён, Паклён)" preset_name_label="true">
+            <key key="genus" value="Acer" />
+            <key key="species" value="campestre" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Клён -->
+<!--         Род:Конский каштан  -->
+
+          <item name="Horse-chestnut (ver. conker tree)" ru.name="Конский каштан обыкновенный" preset_name_label="true">
+            <key key="genus" value="Aesculus" />
+            <key key="species" value="hippocastanum" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Конский каштан -->
+<!--       /Семейство: Сапиндовые -->
+<!--     /Порядок: Сапиндоцветные -->
+<!--     Порядок: 	Розоцветные -->
+<!--       Семейство: Вязовые -->
+<!--         Род: Вяз -->
+
+          <item name="European white elm (ver.: fluttering elm, spreading elm, stately elm, Russian elm)" ru.name="Вяз гладкий (вар. обыкновенный)" preset_name_label="true">
+            <key key="genus" value="Ulmus" />
+            <key key="species" value="laevis" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Вяз -->
+<!--       /Семейство: Вязовые -->
+<!--       Семейство: Розовые -->
+<!--         Род: Рябина -->
+
+          <item name="Rowan (ver.: mountain-ash, Amur mountain-ash, European mountain-ash, quick beam, quickbeam, rowan-berry)" ru.name="Рябина обыкновенная" preset_name_label="true">
+            <key key="genus" value="Sorbus" />
+            <key key="species" value="aucuparia" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Рябина -->
+<!--         Род: Слива -->
+
+          <item name="Bird cherry (ver.: hackberry, hagberry, Mayday tree)" ru.name="Черёмуха обыкновенная (вар.: кистевая, птичья)" preset_name_label="true">
+            <key key="genus" value="Prunus" />
+            <key key="species" value="padus" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Слива -->
+<!--         Род: Яблоня -->
+
+          <item name="European crab apple (ver. European wild apple)" ru.name="Яблоня лесная (вар. дикая)" preset_name_label="true">
+            <key key="genus" value="Malus" />
+            <key key="species" value="sylvestris" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Яблоня -->
+<!--       /Семейство: Розовые -->
+<!--     /Порядок: 	Розоцветные -->
+<!--     Порядок: 	Мальвоцветные -->
+<!--       Семейство: Мальвовые -->
+<!--         Род: Липа -->
+
+          <item name="Small-leaved lime (ver.: littleleaf linden, small-leaved linden)" ru.name="Липа сердцевидная (вар. мелколистная)" preset_name_label="true">
+            <key key="genus" value="Tilia" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Липа -->
+<!--       /Семейство: Мальвовые -->
+<!--     /Порядок: 	Мальвоцветные -->
+<!--     Порядок: Ясноткоцветные -->
+<!--       Семейство: Маслиновые -->
+<!--         Род: Ясень -->
+
+          <item name="European ash (ver. common ash)" ru.name="Ясень обыкновенный (вар. высокий)" preset_name_label="true">
+            <key key="genus" value="Fraxinus" />
+            <key key="species" value="excelsior" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Ясень -->
+<!--       /Семейство: Маслиновые -->
+<!--     /Порядок: Ясноткоцветные -->
+
+      </group>
+      <group name="Evergreen" ru.name="Вечнозелёные" icon="https://upload.wikimedia.org/wikipedia/commons/9/96/Tree_icon.jpg">
+
+<!--   Класс: Двудольные -->
+<!--     Порядок: Магнолиецветные -->
+<!--       Семейство: Магнолиевые -->
+<!--         Род: Магнолия  -->
+
+          <item name="Southern magnolia (ver. bull bay)" ru.name="Магнолия крупноцветковая" preset_name_label="true">
+            <key key="genus" value="Magnolia" />
+            <key key="species" value="grandiflora" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+<!--         /Род: Магнолия -->
+<!--       /Семейство: Магнолиевые -->
+<!--     /Порядок: Магнолиецветные -->
+<!--     Порядок: Лавроцветные -->
+<!--       Семейство: Лавровые -->
+<!--         Род: Коричник -->
+
+        <item name="Cinnamomum (genus)" ru.name="Коричник (вар. Коричный лавр)(род)" preset_name_label="true">
+          <key key="genus" value="Cinnamomum" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <group name="Cinnamomum (species)" ru.name="Коричники (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/9/96/Tree_icon.jpg">
+
+          <item name="Cinnamomum sericeum" ru.name="Коричник шелковистый" preset_name_label="true">
+            <key key="genus" value="Cinnamomum" />
+            <key key="species" value="sericeum" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Japanese cinnamon" ru.name="Коричник японский" preset_name_label="true">
+            <key key="genus" value="Cinnamomum" />
+            <key key="species" value="japonicum" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Коричник -->
+<!--       /Семейство: Лавровые -->
+<!--     /Порядок: Лавроцветные -->
+<!--     Порядок: Бобовоцветные -->
+<!--       Семейство: Бобовые -->
+<!--         Род: Акация -->
+
+        <item name="Acacia (ver. wattles)(genus)" ru.name="Акация (род)" preset_name_label="true">
+          <key key="genus" value="" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <group name="Acacia (species)" ru.name="Акации (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/9/96/Tree_icon.jpg">
+
+          <item name="Silver wattle (ver.: blue wattle, mimosa)" ru.name="Акация серебристая (вар.: подбелённая, Мимоза серебристая)" preset_name_label="true">
+            <key key="genus" value="Acacia" />
+            <key key="species" value="dealbata" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Australian blackwood (ver.: hickory, mudgerabah, Tasmanian blackwood, blackwood acacia)" ru.name="Акация чёрная (вар. чёрнодревная)" preset_name_label="true">
+            <key key="genus" value="Acacia" />
+            <key key="species" value="melanoxylon" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Ovens wattle (ver. wedge-leaved wattle)" ru.name="Акация искривлённая" preset_name_label="true">
+            <key key="genus" value="Acacia" />
+            <key key="species" value="pravissima" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Retinodes water wattle (ver.: swamp wattle, wirilda, ever-blooming wattle, silver wattle)" ru.name="Акация стойкая" preset_name_label="true">
+            <key key="genus" value="Acacia" />
+            <key key="species" value="retinodes" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Акация -->
+<!--       /Семейство: Бобовые -->
+<!--     /Порядок: Бобовоцветные -->
+<!--     Порядок: Букоцветные -->
+<!--       Семейство: Буковые -->
+<!--         Род: Дуб -->
+
+        <item name="Oak (genus)" ru.name="Дуб (род)" preset_name_label="true">
+          <key key="genus" value="Quercus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <group name="Oak (species)" ru.name="Дубы (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/e/ef/Quercus_robur_Silhouette_%28oddsock%29.png">
+
+          <item name="Evergreen oak (ver.: holly oak, holm oak)" ru.name="Дуб каменный" preset_name_label="true">
+            <key key="genus" value="Quercus" />
+            <key key="species" value="ilex" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Cork oak" ru.name="Дуб пробковый" preset_name_label="true">
+            <key key="genus" value="Quercus" />
+            <key key="species" value="suber" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Дуб -->
+<!--       /Семейство: Буковые -->
+<!--     /Порядок: Букоцветные -->
+<!--   /Класс: Двудольные -->
+<!--   Класс:  -->
+<!--     Порядок:  -->
+<!--       Семейство:  -->
+<!--         Род:  -->
+
+<!--
+        <item name=" (род)" preset_name_label="true">
+          <key key="genus" value="" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <group name=" (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/9/96/Tree_icon.jpg">
+
+          <item name="" preset_name_label="true">
+            <key key="genus" value="" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+-->
+
+<!--         /Род:  -->
+<!--       /Семейство: -->
+<!--     /Порядок:  -->
+<!--   /Класс:  -->
+
+      </group>
+    </group>
+
+    <group name="Leafless" ru.name="Без листьев" icon="https://upload.wikimedia.org/wikipedia/commons/9/9a/Noto_Emoji_KitKat_1f335.svg">
+<!--   Класс: Двудольные -->
+<!--     Порядок: Гвоздичноцветные -->
+<!--       Семейство: Кактусовые -->
+<!--         Род: Опунция -->
+
+      <item name="Devil's-tongue (ver.: eastern prickly pear, Indian fig)" ru.name="Опунция стелющаяся (вар.: распростёртая)" preset_name_label="true">
+        <key key="genus" value="Opuntia" />
+        <key key="species" value="humifusa" />
+        <key key="leaf_type" value="leafless" />
+        <reference ref="species_tagging" />
+        <item_separator />
+        <reference ref="optional_tagging" />
+      </item>
+
+<!--         Род: Опунция -->
+<!--       /Семейство: Кактусовые -->
+<!--     /Порядок: Гвоздичноцветные -->
+<!--   /Класс: Двудольные -->
+    </group>
+
+    <group name="Orchard" ru.name="Плодовые" icon="presets/landuse/orchard.svg">
+
+<!--Листопадные -->
+      <group name="Deciduous" ru.name="Листопадные" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+<!--   Класс: Двудольные -->
+<!--     Порядок: Букоцветные -->
+<!--       Семейство: Берёзовые -->
+<!--         Род: Лещина -->
+
+        <item name="Hazel (genus)" ru.name="Лещина (вар.: орешник)(род)" preset_name_label="true">
+          <key key="genus" value="Corylus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="orchard_optional_tagging" />
+        </item>
+
+        <group name="Hazel (species)" ru.name="Лещина (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Tree_1010946.svg">
+
+          <item name="Common hazel" ru.name="Лещина обыкновенная (вар.: Орешник, Лесной орех)" preset_name_label="true">
+            <key key="genus" value="Corylus" />
+            <key key="species" value="avellana" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+          <item name="Turkish hazel (ver. Turkish filbert)" ru.name="Лещина древовидная (вар.: Орешник или Орех медвежий)" preset_name_label="true">
+            <key key="genus" value="Corylus" />
+            <key key="species" value="colurna" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+          <item name="Filbert" ru.name="Лещина крупная (вар.: «ломбардский орех», «фундук»)" preset_name_label="true">
+            <key key="genus" value="Corylus" />
+            <key key="species" value="maxima" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Лещина -->
+<!--       /Семейство: Берёзовые -->
+<!--       Семейство: Ореховые -->
+<!--         Род: Гикори (Кария) -->
+
+          <item name="Pecan" ru.name="Кария пекан (вар.: иллинойсская, Гикори пекан, Пекан обыкновенный) " preset_name_label="true">
+            <key key="genus" value="Carya" />
+            <key key="species" value="illinoinensis" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+<!--         /Род: Гикори (Кария) -->
+<!--         Род: Орех -->
+
+          <item name="Persian walnut (ver.: English walnut, Circassian walnut, common walnut)" ru.name="Орех грецкий (вар.: волошский орех, царский орех, греческий орех)" preset_name_label="true">
+            <key key="genus" value="Juglans" />
+            <key key="species" value="regia" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+          <item name="Manchurian walnut" ru.name="Орех маньчжурский (вар.: думбе́йский, катайский, формозский)" preset_name_label="true">
+            <key key="genus" value="Juglans" />
+            <key key="species" value="mandshurica" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+<!--         /Род: Орех -->
+<!--       /Семейство: Ореховые -->
+<!--     /Порядок: Букоцветные -->
+<!--   /Класс: Двудольные -->
+<!--   Класс:  -->
+<!--     Порядок:  -->
+<!--       Семейство:  -->
+<!--         Род:  -->
+
+<!--
+        <item name=" (род)" preset_name_label="true">
+          <key key="genus" value="" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="orchard_optional_tagging" />
+        </item>
+
+        <group name=" (виды)" icon="presets/landuse/orchard.svg">
+
+          <item name="" preset_name_label="true">
+            <key key="genus" value="" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+        </group>
+-->
+
+<!--         /Род:  -->
+<!--       /Семейство:  -->
+<!--     /Порядок:  -->
+
+<!--     Порядок: Розоцветные -->
+<!--       Семейство: Розовые -->
+<!--         Род: Слива -->
+
+        <item name="Sour cherry (ver.: tart cherry, dwarf cherry)" ru.name="Вишня обыкновенная (вар. кислая)" preset_name_label="true">
+          <key key="genus" value="Prunus" />
+          <key key="species" value="cerasus" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="orchard_optional_tagging" />
+        </item>
+
+        <item name="European plum" ru.name="Слива домашняя" preset_name_label="true">
+          <key key="genus" value="Prunus" />
+          <key key="species" value="domestica" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="orchard_optional_tagging" />
+        </item>
+
+<!--         /Род: Слива -->
+<!--         Род: Груша -->
+
+          <item name="European pear (ver. common pear)" ru.name="Груша обыкновенная (вар. дикая груша)" preset_name_label="true">
+            <key key="genus" value="Pyrus" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+<!--         /Род: Груша -->
+<!--       /Семейство: Розовые -->
+<!--     /Порядок: Розоцветные -->
+<!--   /Класс:  -->
+
+<!--/Листопадные -->
+      </group>
+      <group name="Evergreen" ru.name="Вечнозелёные" icon="https://upload.wikimedia.org/wikipedia/commons/9/96/Tree_icon.jpg">
+<!--Вечнозелёные -->
+
+<!--   Класс: Двудольные -->
+<!--     Порядок: Лавроцветные -->
+<!--       Семейство: Лавровые -->
+<!--         Род: Коричник -->
+
+        <item name="Cinnamomum (genus)" ru.name="Коричник (вар. Коричный лавр)(род)" preset_name_label="true">
+          <key key="genus" value="Cinnamomum" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="orchard_optional_tagging" />
+        </item>
+
+        <group name="Cinnamomum (species)" ru.name="Коричники (виды)" icon="presets/landuse/orchard.svg">
+
+          <item name="Camphor tree (ver. camphorwood, camphor laurel)" ru.name="Коричник камфорный (вар.: камфорный лавр, камфорное дерево)" preset_name_label="true">
+            <key key="genus" value="Cinnamomum" />
+            <key key="species" value="camphora" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+          <item name="False camphor tree (ver. Nepal camphor tree)" ru.name="Коричник железконосный (вар.: Ложнокамфорный лавр)" preset_name_label="true">
+            <key key="genus" value="Cinnamomum" />
+            <key key="species" value="glanduliferum" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+          <item name="Saigon cinnamon (ver.: Vietnamese cinnamon, Vietnamese cassia)" ru.name="Коричник Лоурейра (вар.: вьетнамская кассия)" preset_name_label="true">
+            <key key="genus" value="Cinnamomum" />
+            <key key="species" value="loureiroi" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Коричник -->
+<!--         Род: Лавр -->
+
+          <item name="True laurel (ver.: Grecian laurel, bay laurel, bay tree, sweet bay)" ru.name="Лавр благородный" preset_name_label="true">
+            <key key="genus" value="Laurus" />
+            <key key="species" value="nobilis" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+<!--         /Род: Лавр -->
+<!--         Род:  -->
+<!--         /Род:  -->
+<!--       /Семейство: Лавровые -->
+<!--     /Порядок: Лавроцветные -->
+<!--   /Класс: Двудольные -->
+<!--   Класс:  -->
+<!--     Порядок:  -->
+<!--       Семейство:  -->
+<!--         Род:  -->
+
+<!--
+        <item name=" (род)" preset_name_label="true">
+          <key key="genus" value="" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="orchard_optional_tagging" />
+        </item>
+
+        <group name=" (виды)" icon="presets/landuse/orchard.svg">
+
+          <item name="" preset_name_label="true">
+            <key key="genus" value="" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+        </group>
+-->
+
+<!--         /Род:  -->
+<!--       /Семейство: -->
+<!--     /Порядок:  -->
+<!--   /Класс:  -->
+
+      </group>
+<!--/Вечнозелёные -->
+
+    </group>
+
+<!-- /Отдел: Цветковые -->
+
+  </group>
+</presets>
