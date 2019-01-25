@@ -3,7 +3,7 @@
 
 В настоящий момент включает следующие заготовки:
 * RUS:Дендролог — деревья произрастающие в России ([raw](https://raw.githubusercontent.com/ZKoshak/dendrolog-josm-preset/master/rus-dendrolog.xml))
-** RUS:Dendrolog — многоязыковая облегчённая версия ([raw](https://raw.githubusercontent.com/ZKoshak/dendrolog-josm-preset/master/rus-dendrolog(int).xml))
+* RUS:Dendrolog — многоязыковая облегчённая(без описаний) версия RUS:Дендролога ([raw](https://raw.githubusercontent.com/ZKoshak/dendrolog-josm-preset/master/rus-dendrolog(int).xml))
 
 ### Персоналии
 - [Артём «Зелёный Кошак» Крюковский (ZKoshak)](https://github.com/ZKoshak) — начальная разработка
