@@ -5607,6 +5607,8 @@
 <!--         /Род:  -->
 <!--       /Семейство: Буковые -->
 <!--     /Порядок: Букоцветные -->
+<!--     Порядок: Верескоцветные -->
+<!--     /Порядок: Верескоцветные -->
 <!--   /Класс: Двудольные -->
 <!--   Класс:  -->
 <!--     Порядок:  -->
@@ -7523,6 +7525,137 @@
 <!--         /Род: Орех -->
 <!--       /Семейство: Ореховые -->
 <!--     /Порядок: Букоцветные -->
+<!--     Порядок: Верескоцветные -->
+<!--       Семейство: Эбеновые -->
+<!--         Род: Хурма  -->
+
+        <item name="Хурма (род)" preset_name_label="true">
+          <key key="genus" value="Diospyros" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/200412_-_Plaqueminier_et_ses_kakis.jpg/200px-200412_-_Plaqueminier_et_ses_kakis.jpg" icon_size="200" text="
+  Хурма́ (лат. Diōspyros)" />
+          <space />
+  <label text="Виды этого рода имеют пантропическое распространение с наибольшим разнообразием в Индомалайской области." />
+          <space />
+  <label text="Ради плодов растения культивируются во многих странах Евразии, Америки и в Австралии, где встречаются и свои эндемичные виды." />
+          <space />
+  <label text="Небольшие деревья или кустарники." />
+          <space />
+  <label text="Листья — простые, очерёдные." />
+          <space />
+  <label text="Плод — мясистая ягода, содержащая до 10 семян." />
+          <item_separator />
+          <reference ref="orchard_optional_tagging" />
+          <link href="https://ru.wikipedia.org/wiki/Хурма" />
+        </item>
+
+        <group name="Хурма (виды)" icon="presets/landuse/orchard.svg">
+
+          <item name="Хурма кавказская(вар.: обыкновенная)" preset_name_label="true">
+            <key key="genus" value="Diospyros" />
+            <key key="species" value="lotus" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Diospyros_lotus_-_Date_plum.jpg/200px-Diospyros_lotus_-_Date_plum.jpg" icon_size="200" text="
+  Хурма кавказская, или Хурма обыкновенная (лат. Diospyros lotus)" />
+            <space />
+  <label text="Ареал данного вида простирается от Японии через Китай и Северную Индию до запада Средиземноморья, вплоть до Испании." />
+            <space />
+  <label text="Дерево растёт в нижнем и среднем горных поясах, на Кавказе обычно до 600 м над уровнем моря, в Средней Азии она поднимается выше — до 2000 м." />
+  <label text="Чистые древостои образует редко, обычно растёт вместе с каркасом, ясенем, клёнами и другими лиственными породами." />
+            <space />
+  <label text="Культивируется в пределах своего ареала, а также в США и Северной Африке." />
+            <space />
+  <label text="Дерево высотой 15—30 метров с осыпающейся при старении корой." />
+            <space />
+  <label text="Листья блестящие, кожистые, овальной формы с заострённым концом, 5—15 см длиной и 3—6 см шириной." />
+            <space />
+  <label text="Цветки маленькие зеленоватые, появляются в июне-июле." />
+            <space />
+  <label text="Плоды ягодовидные с сочной мякотью, жёлтые при созревании, 1—2 см диаметром. Семена с тонкой кожурой и очень твёрдым эндоспермом." />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Хурма_кавказская" />
+          </item>
+
+          <item name="Хурма восточная (вар.: японская, китайская; Каки)" preset_name_label="true">
+            <key key="genus" value="Diospyros" />
+            <key key="species" value="kaki" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Diospyros-kaki-20081025.jpg/200px-Diospyros-kaki-20081025.jpg" icon_size="200" text="
+  Хурма́ восто́чная (лат. Diōspyros kāki)" />
+            <space />
+  <label text="Этот вид произрастает в Японии, Китае, Мьянме, Непале, на севере Индии. В Китае он встречается в дикой природе на высотах до 1,830—2500 м." />
+  <label text="Культивируется как плодовое растение по всему миру." />
+            <space />
+  <label text="Дерево, достигающее высоты до 10 м (известны случаи достижения высоты 12 м). С виду растение похоже на яблоню." />
+            <space />
+  <label text="Листья очерёдные, яйцевидно-продолговатые, тёмно-зелёные, снизу бледные, широколанцетовидные. Осенью приобретают красную окраску." />
+            <space />
+  <label text="Цветки в пазухах листьев — одиночные или по нескольку, на коротких ножках. Чашечка четырёхлопастная. Венчик четырёхлопастный, колокольчатый," />
+  <label text="тёмно-красный. В мужских цветках 16 тычинок; в женских четыре — восемь стаминодий и верхняя завязь, обыкновенно восьмигнёздная, с одной" />
+  <label text="семяпочкой в каждом гнезде." />
+            <space />
+  <label text="Хурма восточная цветёт с мая по июнь." />
+            <space />
+  <label text="Цветки желтовато-белые, могут быть трёх типов: мужские, женские и смешанные. Растения, как правило, однодомные с мужскими и женскими цветами" />
+  <label text="отдельно на одном дереве, но существуют также двудомные культуры. Опыление осуществляется насекомыми. Если женские цветки не оплодотворены," />
+  <label text="они размножаются путём партеногенеза, а затем дают бессемянные фрукты." />
+            <space />
+  <label text="Плод — буровато-жёлтая, мясистая ягода размером с яблоко, съедобен, сладкий, оранжевый, похожий на помидор." />
+            <space />
+  <label text="Шарообразный или овальный плод имеет массу до 500 г. Гладкая, блестящая и тонкая кожура имеет цвет от жёлтого до красно-оранжевого. Несколько" />
+  <label text="более светлая мякоть плода может содержать до восьми семян и имеет вяжущий вкус. При созревании плод становится мягче." />
+            <space />
+  <label text="Плоды хурмы восточной становятся зрелыми, когда листья уже в большинстве успели опасть, в октябре — ноябре. Период созревания приходится" />
+  <label text="у одних сортов на начало, у других — на конец октября." />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Хурма_восточная" />
+          </item>
+
+          <item name="Хурма виргинская (вар.: американская)" preset_name_label="true">
+            <key key="genus" value="Diospyros" />
+            <key key="species" value="virginiana" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Diospyros_virginiana_JPG1a.jpg/200px-Diospyros_virginiana_JPG1a.jpg" icon_size="200" text="
+  Хурма виргинская, или Хурма американская (лат. Diospyros virginiana)" />
+            <space />
+  <label text="Ареал вида простирается от Новой Англии на севере до Флориды на юге и от Атлантического океана на востоке до Техаса, Канзаса и Оклахомы" />
+  <label text="на западе. Культивируется в пределах ареала, а также в Средиземноморье, Гвиане и на Яве." />
+            <space />
+  <label text="Небольшое листопадное дерево высотой до 20 м с тёмно-серой или коричневатой корой. Растение двудомное, хотя некоторые экземпляры однодомные." />
+            <space />
+  <label text="Корневая система глубокая стержневая." />
+            <space />
+  <label text="Листья крупные длиной 15,2 см, кожистые, овальной формы с сердцевидной основой и заострённым концом." />
+            <space />
+  <label text="Цветки однополые, опыляются насекомыми или ветром." />
+            <space />
+  <label text="Плод ягодовидный с сочной мякотью. Семена с тонкой кожурой и очень твёрдым эндоспермом." />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Diospyros_virginiana_map.png/400px-Diospyros_virginiana_map.png" icon_size="400" text="" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Хурма_виргинская" />
+          </item>
+
+        </group>
+
+<!--         /Род: Хурма -->
+<!--       /Семейство: Эбеновые -->
+<!--     /Порядок: Верескоцветные -->
 <!--   /Класс: Двудольные -->
 <!--   Класс:  -->
 <!--     Порядок:  -->

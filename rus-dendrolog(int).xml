@@ -1664,6 +1664,8 @@
 <!--         /Род:  -->
 <!--       /Семейство: Буковые -->
 <!--     /Порядок: Букоцветные -->
+<!--     Порядок: Верескоцветные -->
+<!--     /Порядок: Верескоцветные -->
 <!--   /Класс: Двудольные -->
 <!--   Класс:  -->
 <!--     Порядок:  -->
@@ -2179,6 +2181,56 @@
 <!--         /Род: Орех -->
 <!--       /Семейство: Ореховые -->
 <!--     /Порядок: Букоцветные -->
+<!--     Порядок: Верескоцветные -->
+<!--       Семейство: Эбеновые -->
+<!--         Род: Хурма  -->
+
+        <item name="Diospyros (ver.: ebony, persimmon)(genus)" ru.name="Хурма (род)" preset_name_label="true">
+          <key key="genus" value="Diospyros" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="deciduous" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="orchard_optional_tagging" />
+        </item>
+
+        <group name="Diospyros (ver.: ebony, persimmon)(species)" ru.name="Хурма (виды)" icon="presets/landuse/orchard.svg">
+
+          <item name="Caucasian persimmon (ver.: lilac persimmon, date-plum)" ru.name="Хурма кавказская(вар.: обыкновенная)" preset_name_label="true">
+            <key key="genus" value="Diospyros" />
+            <key key="species" value="lotus" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+          <item name="Japanese persimmon (ver.: kaki, Chinese persimmon, Oriental persimmon, kaki persimmon)" ru.name="Хурма восточная (вар.: японская, китайская; Каки)" preset_name_label="true">
+            <key key="genus" value="Diospyros" />
+            <key key="species" value="kaki" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+          <item name="American persimmon (ver.: common persimmon, eastern persimmon, simmon, possumwood, possum apples, sugar plum)" ru.name="Хурма виргинская (вар.: американская)" preset_name_label="true">
+            <key key="genus" value="Diospyros" />
+            <key key="species" value="virginiana" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="deciduous" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Хурма -->
+<!--       /Семейство: Эбеновые -->
+<!--     /Порядок: Верескоцветные -->
 <!--   /Класс: Двудольные -->
 <!--   Класс:  -->
 <!--     Порядок:  -->
