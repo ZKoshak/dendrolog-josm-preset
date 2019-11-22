@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
+  author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
+  version="0.0ru20191121"
+  shortdescription="Деревья произрастающие в Санкт-Петербурге"
+  description="Заготовка для тегирования деревьев произрастающих на территории Санкт-Петербурга">
+
+  <chunk id="species_tagging">
+    <text key="name" text="Name" />
+    <text key="start_date" text="Когда посажено" />
+    <text key="height" text="Height (meters)" />
+    <text key="circumference" text="Circumference (meters)" />
+    <text key="survey_date" text="Дата обследования" />
+    <combo key="denotation" text="Denotation" values_searchable="true" values_context="tree denotation" >
+      <list_entry value="landmark" short_description="Trees remarkable due to its size or prominent location, usually visible from great distances and useful for navigation." />
+      <list_entry value="natural_monument" short_description="Especially old tree, often with a particular shape. Usually protected for its uniqueness." />
+      <list_entry value="avenue" short_description="Trees aligned along a road." />
+      <list_entry value="urban" short_description="Trees found within settlements, e.g. in parks or spread through residential areas." />
+      <list_entry value="agricultural" short_description="Trees in agricultural use." />
+    </combo>
+    <text key="taxon" text="Taxon" />
+  </chunk>
+
+  <chunk id="genus_tagging">
+    <reference ref="species_tagging" />
+    <text key="species" text="Species" />
+  </chunk>
+
+  <chunk id="optional_tagging">
+    <combo key="nest" text="Наличие гнезда/скворечника" values="yes,hollow,man_made" />
+    <text key="nest:habitat" text="Кем занято гнездо" />
+    <label text="(желательно вид или род, на латыни)" />
+    <combo key="animal_breeding" text="Наличие кормушки" values="yes,bird,deer,squirell,moose" />
+    <label text="(можно указать для подкормки каких животных используется, на английском)" />
+    <text key="ref" text="Reference" />
+    <text key="description" text="Description" />
+    <text key="note" text="Note" />
+  </chunk>
+
+  <chunk id="orchard_optional_tagging">
+    <reference ref="optional_tagging" />
+  </chunk>
+
+  <group name="Дендролог.СПб" icon="https://upload.wikimedia.org/wikipedia/commons/3/30/Forestry_Le%C5%9Bnictwo_%28Beentree%292.svg">
+
+  </group>
+</presets>
