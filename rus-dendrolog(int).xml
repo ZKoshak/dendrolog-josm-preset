@@ -173,6 +173,17 @@
           <reference ref="optional_tagging" />
         </item>
 
+        <item name="Eastern white pine (ver.: northern white pine, white pine, Weymouth pine, soft pine)" ru.name="Сосна веймутова (вар.: белая восточная)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="strobus" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
       </group>
 
 <!--         /Род: Сосна -->
