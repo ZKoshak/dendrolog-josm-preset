@@ -265,10 +265,14 @@
           <reference ref="species_tagging" />
           <item_separator />
           <reference ref="optional_tagging" />
-        </item>
+        </item>      
 
-  </group>
+      </group>
 
 <!--         /Род: Сосна -->
+
+    </group>
+
+  </group>
 
 </presets>
