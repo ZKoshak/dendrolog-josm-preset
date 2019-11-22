@@ -48,5 +48,227 @@
 
   <group name="Dendrolog.SPb" icon="https://upload.wikimedia.org/wikipedia/commons/3/30/Forestry_Le%C5%9Bnictwo_%28Beentree%292.svg">
 
+<!-- Отдел: Хвойные -->
+
+    <group name="Conifer" ru.name="Хвойные" icon="https://upload.wikimedia.org/wikipedia/commons/f/f6/Map_marker_icon_%E2%80%93_Nicolas_Mollet_%E2%80%93_Forest_%E2%80%93_Nature_%E2%80%93_simple.png">
+<!--   Класс: Хвойные -->
+<!--     Порядок: Сосновые -->
+<!--       Семейство: Сосновые -->
+<!--         Род: Сосна -->
+
+      <item name="Pine (genus)" ru.name="Сосна (род)" preset_name_label="true">
+        <key key="genus" value="Pinus" />
+        <key key="leaf_type" value="needleleaved" />
+        <key key="leaf_cycle" value="evergreen" />
+        <reference ref="genus_tagging" />
+        <item_separator />
+        <reference ref="optional_tagging" />
+      </item>
+
+      <group name="Pine (species)" ru.name="Сосны (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/5/5f/Meuble_h%C3%A9raldique_Pin_maritime.svg">
+
+        <item name="Scots pine" ru.name="Сосна обыкновенная" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="sylvestris" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Austrian pine (ver.: black pine)" ru.name="Сосна чёрная" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="nigra" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Japanese red pine (ver. Korean red pine)" ru.name="Сосна густоцветковая (вар.: красная японская)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="densiflora" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Korean pine (ver. Chinese pinenut)" ru.name="Сосна корейская (вар.: кедровая корейская, Корейский кедр, Маньчжурский кедр)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="koraiensis" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Siberian dwarf pine (ver.: dwarf stone pine, Japanese stone pine, creeping pine)" ru.name="Сосна стланиковая (вар.: карликовая, плачущая, Кедровый стланик)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="pumila" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Siberian pine" ru.name="Сосна сибирская кедровая (вар.: Сибирский кедр)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="sibirica" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Jack pine (ver.: grey pine, scrub pine)" ru.name="Сосна Банкса (вар.: сосна блэк джек, канадская роговая сосна, сосна Гудзонова залива, лабрадорская сосна, северная низкорослая сосна, сосна принцессы, щеголеватая сосна)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="banksiana" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Swiss pine (ver.: Swiss stone pine, Arolla pine, Austrian stone pine, Stone pine)" ru.name="Сосна кедровая европейская (вар.: С. европейская, Европейский кедр)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="cembra" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Shore pine (ver.: contorta pine, twisted pine, Bolander's beach pine, Bolander pine, tamarack pine, Sierra lodgepole pine)" ru.name="Сосна скрученная" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="contorta" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Lodgepole pine (ver.: contorta pine)" ru.name="Сосна скрученная широкохвойная" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="contorta" />
+          <key key="subspecies" value="latifolia" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Pinus friesiana (ver.: P. lapponica)" ru.name="Сосна лапландская (вар.: С. Фриза)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="friesiana" />
+          <key key="species:synonim" value="lapponica" />
+          <key key="taxon:synonims" value="Pinus sylvestris ssp. lapponica, Pinus sylvestris var. lapponica" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Western white pine (ver.: silver pine, California mountain pine, Idaho pine)" ru.name="Сосна горная веймутова (вар.: С. белая западная, С. айдахская белая)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="monticola" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Japanese white pine (ver.: Ulleungdo white pine, five-needle pine)" ru.name="Сосна белая японская (вар.: С. девичья, С. мелкоцветковая)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="parviflora" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Balkan pine (ver.: Macedonian pine)" ru.name="Сосна румелийская (вар.: балканская, македонская)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Red pine (ver.: Norway pine)" ru.name="Сосна смолистая (вар.: красная)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="resinosa" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Eastern white pine (ver.: northern white pine, white pine, Weymouth pine, soft pine)" ru.name="Сосна веймутова (вар.: белая восточная)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="strobus" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Pinus uncinata" ru.name="Сосна крючковатая" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="uncinata" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
+        <item name="Bhutan pine (ver.: blue pine, Himalayan pine, Himalayan white pine) " ru.name="Сосна гималайская (вар.: веймутова гималайская, бутанская, Уоллича, Валлиха)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="wallichiana" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <key key="introduced" value="yes" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
   </group>
+
+<!--         /Род: Сосна -->
+
 </presets>
