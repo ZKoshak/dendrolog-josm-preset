@@ -2453,4 +2453,35 @@
         <item name=" (род)" preset_name_label="true">
           <key key="genus" value="" />
           <key key="leaf_type" value="broadleaved" />
-          <key key="l
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <reference ref="orchard_optional_tagging" />
+        </item>
+        <group name=" (виды)" icon="presets/landuse/orchard.svg">
+          <item name="" preset_name_label="true">
+            <key key="genus" value="" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="orchard_optional_tagging" />
+          </item>
+        </group>
+-->
+
+<!--         /Род:  -->
+<!--       /Семейство: -->
+<!--     /Порядок:  -->
+<!--   /Класс:  -->
+
+      </group>
+<!--/Вечнозелёные -->
+
+    </group>
+
+<!-- /Отдел: Цветковые -->
+
+  </group>
+</presets>
