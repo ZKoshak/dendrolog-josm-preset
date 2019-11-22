@@ -32,6 +32,7 @@
   </chunk>
 
   <chunk id="optional_tagging">
+    <check key="introduced" text="Introduced" ru.text="Интродуцирован" default="off" />
     <combo key="nest" text="Presence of nest/nesting box" ru.text="Наличие гнезда/скворечника" values="yes,hollow,man_made" />
     <text key="nest:habitat" text="Who occupied the nest" ru.text="Кем занято гнездо" />
     <label text="(desirable species or genus, in Latin)" ru.text="(желательно вид или род, на латыни)" />
