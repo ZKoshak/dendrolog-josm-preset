@@ -7138,7 +7138,6 @@
 <!--     Порядок: Верескоцветные -->
 <!--       Семейство: Вересковые -->
 <!--         Род: Рододендрон -->
-<!--
 
         <item name="Рододендрон (род)" preset_name_label="true">
           <key key="genus" value="Rhododendron" />
@@ -7154,8 +7153,6 @@
           <reference ref="optional_tagging" />
           <link href="https://ru.wikipedia.org/wiki/Рододендрон" />
         </item>
-
--->
 
         <group name="Рододендрон (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/9/96/Tree_icon.jpg">
 
