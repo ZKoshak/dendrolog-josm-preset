@@ -2,7 +2,7 @@
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Artyom «ZKoshak» Krukovsky"
   ru.author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0int20190124"
+  version="0.0.2int20190125"
   link="https://github.com/ZKoshak/dendrolog-josm-preset"
   icon="https://upload.wikimedia.org/wikipedia/commons/3/30/Forestry_Le%C5%9Bnictwo_%28Beentree%292.svg"
   shortdescription="Trees growing in Russia"
@@ -2027,6 +2027,47 @@
 <!--         /Род: Дуб -->
 <!--       /Семейство: Буковые -->
 <!--     /Порядок: Букоцветные -->
+<!--     Порядок: Верескоцветные -->
+<!--       Семейство: Вересковые -->
+<!--         Род: Рододендрон -->
+
+        <group name="Rhododendron (species)" ru.name="Рододендрон (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/9/96/Tree_icon.jpg">
+
+          <item name="American rhododendron (ver.: great laurel, great rhododendron, rosebay rhododendron, big rhododendron, late rhododendron, summer rhododendron, bigleaf laurel, deertongue laurel, rose tree, rose bay, bayis, mountain laurel)" ru.name="Рододендрон крупнейший" preset_name_label="true">
+            <key key="genus" value="Rhododendron" />
+            <key key="species" value="maximum" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Tree rhododendron (ver.: Burans, Laligurans, Gurans)" ru.name="Рододендрон древесный" preset_name_label="true">
+            <key key="genus" value="Rhododendron" />
+            <key key="species" value="arboreum" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+          <item name="Rhododendron brachycarpum" ru.name="Рододендрон короткоплодный" preset_name_label="true">
+            <key key="genus" value="Rhododendron" />
+            <key key="species" value="brachycarpum" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+          </item>
+
+        </group>
+
+<!--         /Род: Рододендрон -->
+<!--       /Семейство: Вересковые -->
+<!--     /Порядок: Верескоцветные -->
 <!--   /Класс: Двудольные -->
 <!--   Класс:  -->
 <!--     Порядок:  -->

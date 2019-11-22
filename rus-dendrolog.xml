@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0ru20190123.11"
+  version="0.0.2ru20190125"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -7135,6 +7135,135 @@
 <!--         /Род: Дуб -->
 <!--       /Семейство: Буковые -->
 <!--     /Порядок: Букоцветные -->
+<!--     Порядок: Верескоцветные -->
+<!--       Семейство: Вересковые -->
+<!--         Род: Рододендрон -->
+<!--
+
+        <item name="Рододендрон (род)" preset_name_label="true">
+          <key key="genus" value="Rhododendron" />
+          <key key="leaf_type" value="broadleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="genus_tagging" />
+          <item_separator />
+          <label icon="" icon_size="200" text="
+  " />
+          <space />
+  <label text="" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+          <link href="https://ru.wikipedia.org/wiki/Рододендрон" />
+        </item>
+
+-->
+
+        <group name="Рододендрон (виды)" icon="https://upload.wikimedia.org/wikipedia/commons/9/96/Tree_icon.jpg">
+
+          <item name="Рододендрон крупнейший" preset_name_label="true">
+            <key key="genus" value="Rhododendron" />
+            <key key="species" value="maximum" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Rhododendron_maximum_10zz.jpg/300px-Rhododendron_maximum_10zz.jpg" icon_size="300" text="
+  Рододе́ндрон крупне́йший (лат. Rhododéndron máximum)" />
+            <space />
+  <label text="Рододендрон крупнейший распространён на востоке Северной Америки. Северная граница ареала — Новая Шотландия (где вид очень редок, возможно," />
+  <label text="исчез) и Мэн, южная — северная часть Джорджии." />
+            <space />
+  <label text="Рододендрон крупнейший — ветвистый вечнозелёный кустарник или, редко, небольшое дерево, достигающее 3,5 м в высоту. Молодые веточки" />
+  <label text="железисто-опушённые, вскоре оголяющиеся." />
+            <space />
+  <label text="Листья обратноланцетовидные до эллиптических, с цельным краем; верхняя поверхность голая и блестящая, нижняя — с паутинистым налётом. Черешок" />
+  <label text="листа с сохраняющимся опушением. На горе Митчелл произрастает форма рододендрона с красными цветками." />
+            <space />
+  <label text="Соцветие состоит из 14—25 цветков. Венчик колокольчатый, белый, бледно-розовый или сиреневый, лепестки до 3 см длиной, часто с мелкими" />
+  <label text="зеленоватыми пятнышками. Чашечка маленькая, железистая, разделённая на округлые чашелистики. Завязь ворсисто-железистая, пестик голый." />
+            <space />
+  <label text="Плод — коробочка 17—20 × 4—6 мм." />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Rhododendron_maximum_range_map.png/400px-Rhododendron_maximum_range_map.png" icon_size="400" text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Рододендрон_крупнейший" />
+          </item>
+
+          <item name="Рододендрон древесный" preset_name_label="true">
+            <key key="genus" value="Rhododendron" />
+            <key key="species" value="arboreum" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Rhododendron_arboreum_tree_Munnar_India.JPG/200px-Rhododendron_arboreum_tree_Munnar_India.JPG" icon_size="200" text="
+  Рододе́ндрон древе́сный (лат. Rhododéndron arbóreum)" />
+            <space />
+  <label text="Распространение: Китай, Бутан, Индия, Кашмир, Непал, Сикким, Шри-Ланка, Северный Таиланд, Северный Вьетнам. Горные леса и кустарниковые" />
+  <label text="заросли на высотах от 1500 до 3800 метров над уровнем моря." />
+            <space />
+  <label text="Рододендрон древесный — вечнозелёное дерево с хорошо выраженным главным стволом, (1–)5–20(–30) м. Кора красно-коричневая, растрескивающаяся" />
+  <label text="на мелкие хлопья. Молодые веточки сероопушённые." />
+            <space />
+  <label text="Листья узкоэллиптические до яйцевидных, 6,5—19 см длиной и 1,8—5 см шириной, с цельным краем, верхняя поверхность морщинисто-сетчатая," />
+  <label text="нижняя — беловато- или коричневоопушённая. Черешки опушённые, со временем иногда оголяющиеся." />
+            <space />
+  <label text="Соцветие густое, состоит из 10—20 цветков. Венчик воронковидно-колокольчатый, до 4 см длиной, розового или малинового цвета, изредка белый." />
+  <label text="Чашечка разделена на 5 небольших треугольных долей. Тычинки в количестве 10, неравные, голые. Пестик голый, завязь покрыта белым, иногда" />
+  <label text="также железистым, опушением." />
+            <space />
+  <label text="Плод — коробочка 15—30×6 мм, цилиндрическая." />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Рододендрон_древесный" />
+          </item>
+
+          <item name="Рододендрон короткоплодный" preset_name_label="true">
+            <key key="genus" value="Rhododendron" />
+            <key key="species" value="brachycarpum" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Rhododendron_brachycarpum_ssp._fauriei_-_VanDusen_Botanical_Garden_-_Vancouver%2C_BC_-_DSC06797.jpg/300px-Rhododendron_brachycarpum_ssp._fauriei_-_VanDusen_Botanical_Garden_-_Vancouver%2C_BC_-_DSC06797.jpg" icon_size="300" text="
+  Рододе́ндрон короткопло́дный (лат. Rhododēndron brachycārpum)" />
+            <space />
+  <label text="
+Япония, Корея, в пределах Дальнего Востока России встречается на Курилах (Итуруп, Кунашир) и на территории Сихотэ-Алинского заповедника в Приморье.
+
+Растёт на каменистых участках среди смешанных лесов.
+
+Вечнозелёное дерево, или кустарник. В Сихотэ-Алине высота до 4—6 м, диаметр ствола до 15—20 см." />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Рододендрон_короткоплодный" />
+          </item>
+
+<!--
+
+          <item name="Рододендрон " preset_name_label="true">
+            <key key="genus" value="Rhododendron" />
+            <key key="species" value="" />
+            <key key="leaf_type" value="broadleaved" />
+            <key key="leaf_cycle" value="evergreen" />
+            <reference ref="species_tagging" />
+            <item_separator />
+            <label icon="" icon_size="200" text="
+  " />
+            <space />
+  <label text="" />
+            <item_separator />
+            <reference ref="optional_tagging" />
+            <link href="https://ru.wikipedia.org/wiki/Рододендрон_" />
+          </item>
+
+-->
+
+        </group>
+
+<!--         /Род: Рододендрон -->
+<!--       /Семейство: Вересковые -->
+<!--     /Порядок: Верескоцветные -->
 <!--   /Класс: Двудольные -->
 <!--   Класс:  -->
 <!--     Порядок:  -->
