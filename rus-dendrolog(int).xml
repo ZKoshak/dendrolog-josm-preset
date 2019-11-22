@@ -140,6 +140,18 @@
           <reference ref="optional_tagging" />
         </item>
 
+        <item name="Pinus friesiana (ver.: P. lapponica)" ru.name="Сосна лапландская (вар.: С. Фриза)" preset_name_label="true">
+          <key key="genus" value="Pinus" />
+          <key key="species" value="friesiana" />
+          <key key="species:synonim" value="lapponica" />
+          <key key="taxon:synonims" value="Pinus sylvestris ssp. lapponica, Pinus sylvestris var. lapponica" />
+          <key key="leaf_type" value="needleleaved" />
+          <key key="leaf_cycle" value="evergreen" />
+          <reference ref="species_tagging" />
+          <item_separator />
+          <reference ref="optional_tagging" />
+        </item>
+
         <item name="Siberian pine" ru.name="Сосна сибирская кедровая (вар.: Сибирский кедр)" preset_name_label="true">
           <key key="genus" value="Pinus" />
           <key key="species" value="sibirica" />
@@ -2430,38 +2442,4 @@
         <item name=" (род)" preset_name_label="true">
           <key key="genus" value="" />
           <key key="leaf_type" value="broadleaved" />
-          <key key="leaf_cycle" value="evergreen" />
-          <reference ref="genus_tagging" />
-          <item_separator />
-          <reference ref="orchard_optional_tagging" />
-        </item>
-
-        <group name=" (виды)" icon="presets/landuse/orchard.svg">
-
-          <item name="" preset_name_label="true">
-            <key key="genus" value="" />
-            <key key="species" value="" />
-            <key key="leaf_type" value="broadleaved" />
-            <key key="leaf_cycle" value="evergreen" />
-            <reference ref="species_tagging" />
-            <item_separator />
-            <reference ref="orchard_optional_tagging" />
-          </item>
-
-        </group>
--->
-
-<!--         /Род:  -->
-<!--       /Семейство: -->
-<!--     /Порядок:  -->
-<!--   /Класс:  -->
-
-      </group>
-<!--/Вечнозелёные -->
-
-    </group>
-
-<!-- /Отдел: Цветковые -->
-
-  </group>
-</presets>
+          <key key="l
