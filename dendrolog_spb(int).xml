@@ -2,7 +2,7 @@
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Artyom «ZKoshak» Krukovsky"
   ru.author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0int20191121"
+  version="0.0.1int20200118"
   link="https://github.com/ZKoshak/dendrolog-josm-preset"
   icon="https://upload.wikimedia.org/wikipedia/commons/3/30/Forestry_Le%C5%9Bnictwo_%28Beentree%292.svg"
   shortdescription="Trees growing in St.Petersburg(Russia)"
@@ -24,11 +24,13 @@
       <list_entry value="agricultural" short_description="Trees in agricultural use." />
     </combo>
     <text key="taxon" text="Taxon" />
+    <text key="taxon:synonims" text="Taxon synonims" />
   </chunk>
 
   <chunk id="genus_tagging">
     <reference ref="species_tagging" />
     <text key="species" text="Species" />
+    <text key="species:synonims" text="Species synonims" />
   </chunk>
 
   <chunk id="optional_tagging">
@@ -180,7 +182,7 @@
         <item name="Pinus friesiana (ver.: P. lapponica)" ru.name="Сосна лапландская (вар.: С. Фриза)" preset_name_label="true">
           <key key="genus" value="Pinus" />
           <key key="species" value="friesiana" />
-          <key key="species:synonim" value="lapponica" />
+          <key key="species:synonims" value="lapponica" />
           <key key="taxon:synonims" value="Pinus sylvestris ssp. lapponica, Pinus sylvestris var. lapponica" />
           <key key="leaf_type" value="needleleaved" />
           <key key="leaf_cycle" value="evergreen" />

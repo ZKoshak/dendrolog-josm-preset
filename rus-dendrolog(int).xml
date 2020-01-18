@@ -2,7 +2,7 @@
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Artyom «ZKoshak» Krukovsky"
   ru.author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0.2int20190125"
+  version="0.0.3int20200118"
   link="https://github.com/ZKoshak/dendrolog-josm-preset"
   icon="https://upload.wikimedia.org/wikipedia/commons/3/30/Forestry_Le%C5%9Bnictwo_%28Beentree%292.svg"
   shortdescription="Trees growing in Russia"
@@ -24,11 +24,13 @@
       <list_entry value="agricultural" short_description="Trees in agricultural use." />
     </combo>
     <text key="taxon" text="Taxon" />
+    <text key="taxon:synonims" text="Taxon synonims" />
   </chunk>
 
   <chunk id="genus_tagging">
     <reference ref="species_tagging" />
     <text key="species" text="Species" />
+    <text key="species:synonims" text="Species synonims" />
   </chunk>
 
   <chunk id="optional_tagging">
