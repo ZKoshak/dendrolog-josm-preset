@@ -6527,7 +6527,7 @@
 
           <item name="Липа сердцевидная (вар. мелколистная)" preset_name_label="true">
             <key key="genus" value="Tilia" />
-            <key key="species" value="" />
+            <key key="species" value="cordata" />
             <key key="leaf_type" value="broadleaved" />
             <key key="leaf_cycle" value="deciduous" />
             <reference ref="species_tagging" />
