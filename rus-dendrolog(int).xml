@@ -2360,7 +2360,7 @@
 
           <item name="European pear (ver. common pear)" ru.name="Груша обыкновенная (вар. дикая груша)" preset_name_label="true">
             <key key="genus" value="Pyrus" />
-            <key key="species" value="" />
+            <key key="species" value="communis" />
             <key key="leaf_type" value="broadleaved" />
             <key key="leaf_cycle" value="deciduous" />
             <reference ref="species_tagging" />
