@@ -1884,7 +1884,7 @@
 
         <item name="Тис остроконечный(вар.: дальневосточный)" preset_name_label="true">
           <key key="genus" value="Taxus" />
-          <key key="species" value="остроконечный" />
+          <key key="species" value="cuspidata" />
           <key key="leaf_type" value="needleleaved" />
           <key key="leaf_cycle" value="evergreen" />
           <reference ref="species_tagging" />
