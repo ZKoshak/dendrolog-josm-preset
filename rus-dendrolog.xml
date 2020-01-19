@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Артём «Зелёный Кошак» Крюковский(ZKoshak)"
-  version="0.0.3ru20200118"
+  version="0.0.3ru20200119"
   shortdescription="Деревья произрастающие в России"
   description="Заготовка для тегирования деревьев произрастающих на территории России">
 
@@ -78,6 +78,9 @@
         <item name="Сосна обыкновенная" preset_name_label="true">
           <key key="genus" value="Pinus" />
           <key key="species" value="sylvestris" />
+          <key key="species:synonims" value="krylovii, fominii, cretacea, binatofolio, borealis, ericetorum, erzeroomica, frieseana, genevensis, genovensis, hagenaviensis, lapponica, montana, mughus, resinosa, rigensis, rubra, tartarica" />
+          <key key="taxon:synonims" value="Pinus sylvestris var. cretacea, Pinus sylvestris ssp. cretacea" />
+          <key key="taxon:synonims:ru" value="Сосна Крылова, Сосна лесная, Сосна меловая" />
           <key key="leaf_type" value="needleleaved" />
           <key key="leaf_cycle" value="evergreen" />
           <reference ref="species_tagging" />
