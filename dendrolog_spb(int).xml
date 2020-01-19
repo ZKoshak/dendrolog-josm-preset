@@ -82,9 +82,11 @@
           <reference ref="optional_tagging" />
         </item>
 
-        <item name="Austrian pine (ver.: black pine)" ru.name="Сосна чёрная" preset_name_label="true">
+        <item name="Austrian pine (ver.: black pine)" ru.name="Сосна чёрная (вар.: Сосна австрийская, Сосна чёрная австрийская)" preset_name_label="true">
           <key key="genus" value="Pinus" />
           <key key="species" value="nigra" />
+          <key key="species:synonims" value="austriaca, banatica, laricio, nigricans" />
+          <key key="taxon:synonims" value="Abies marylandica, Abies novae-angliae" />
           <key key="leaf_type" value="needleleaved" />
           <key key="leaf_cycle" value="evergreen" />
           <key key="introduced" value="yes" />
