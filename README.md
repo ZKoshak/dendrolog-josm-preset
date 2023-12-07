@@ -1,7 +1,7 @@
 # ![icon](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Forestry_Le%C5%9Bnictwo_%28Beentree%292.svg/50px-Forestry_Le%C5%9Bnictwo_%28Beentree%292.svg.png)Дендролог
 Набор заготовок для [JOSM](https://josm.openstreetmap.de/), облегчающие и унифицирующие тегирование деревьев и кустарников.
 
-!NB! Данные заготовки предназначены для проекта [Плантарий:Открытая карта растений(Plantarium:Open Plant Map)](http://opm.zkoshak.linkpc.net). При их использовании для OpenStreetMap, следует учитывать возможность расхождений из-за ошибок в принятой там схеме тегирования.
+!NB! Данные заготовки предназначены для проекта [Плантарий:Открытая карта растений(Plantarium:Open Plant Map)](http://opm.zkoshak.linkpc.net). При их использовании для OpenStreetMap, следует учитывать возможность расхождений из-за ошибок в принятой осмерами некорректной схеме тегирования.
 
 В настоящий момент включает следующие заготовки:
 * RUS:Дендролог — деревья произрастающие в России ([raw](https://raw.githubusercontent.com/ZKoshak/dendrolog-josm-preset/master/rus-dendrolog.xml))
